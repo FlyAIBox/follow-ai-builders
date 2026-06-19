@@ -1,0 +1,105 @@
+# =============================================================================
+# Follow Builders — 中央 Feed 生产流水线
+# =============================================================================
+#
+# 【定位】
+#   本 workflow 仅在上游维护者仓库（默认 FlyAIBox/follow-builders）中运行。
+#   它负责定时或手动抓取外部内容，生成 feed-*.json 并 push 回仓库。
+#   用户侧调用 /ai skill 时不会触发此 workflow；用户只通过 HTTP 消费已发布的 JSON。
+#
+# 【完整链路】
+#   GitHub Actions (本文件)
+#     → scripts/generate-feed.js + bestblogs 脚本
+#     → commit feed-*.json / state-feed.json
+#   用户机器
+#     → prepare-digest.js 从 raw.githubusercontent.com 拉取 JSON
+#     → Agent 按 prompts 改写并交付
+#
+# 【详细文档】docs/generate-feed.zh-CN.md
+# =============================================================================
+
+name: Generate Feeds
+
+on:
+  schedule:
+    # 定时：每 30 分钟跑全套（UTC 每小时的 :00 和 :30）
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+    # 手动：GitHub → Actions → Generate Feeds → Run workflow
+    inputs:
+      mode:
+        description: '抓取范围（all=全套；*-only=只跑某一路）'
+        required: false
+        default: 'all'
+        type: choice
+        options:
+          - all              # 默认：curated 三路 + bestblogs 全套
+          - tweets-only      # 仅 X/Twitter → feed-x.json
+          - podcasts-only    # 仅播客 RSS + 转录 → feed-podcasts.json
+          - blogs-only       # 仅官方博客 RSS → feed-blogs.json
+          - bestblogs-only   # 仅 BestBlogs RSS 聚合 → feed-bestblogs.json
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    # 需要 write 权限：最后一步要把 feed 文件 push 回同一仓库
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        # 所有抓取脚本位于 scripts/ 目录，依赖见 scripts/package.json
+        run: cd scripts && npm install
+
+      - name: Generate feeds
+        # Secrets（在仓库 Settings → Secrets and variables → Actions 中配置）：
+        #   X_BEARER_TOKEN  — X API v2，generate-feed.js 抓推文时必需
+        #   POD2TXT_API_KEY — 播客转录服务，generate-feed.js 抓播客时必需
+        # bestblogs 链路（import-bestblogs / generate-bestblogs-feed）不需要 API key
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          POD2TXT_API_KEY: ${{ secrets.POD2TXT_API_KEY }}
+        run: |
+          # 分支逻辑（三条路径）：
+          #
+          # 1. 手动 + bestblogs-only
+          #    先同步 BestBlogs OPML 源列表，再抓取 RSS 生成 feed-bestblogs.json
+          #
+          # 2. 手动 + tweets/podcasts/blogs-only
+          #    只跑 generate-feed.js 的对应 --*-only 分支，便于调试或节省 API 配额
+          #
+          # 3. 定时触发，或手动选 all
+          #    全套：bestblogs 导入 → curated 三路 → bestblogs feed 生成
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.mode }}" = "bestblogs-only" ]; then
+            cd scripts && npm run import-bestblogs && npm run generate-bestblogs-feed
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.mode }}" != "all" ]; then
+            cd scripts && node generate-feed.js --${{ inputs.mode }}
+          else
+            cd scripts && npm run import-bestblogs && node generate-feed.js && npm run generate-bestblogs-feed
+          fi
+
+      - name: Commit and push feeds
+        # 将生成产物写回仓库，供用户侧 prepare-digest.js 通过 raw URL 拉取
+        #
+        # 提交文件说明：
+        #   feed-x.json / feed-podcasts.json / feed-blogs.json / feed-bestblogs.json
+        #     — 四类内容的结构化 JSON feed
+        #   state-feed.json
+        #     — 跨次运行的去重状态（tweet ID、episode GUID、文章 URL 等）
+        #   config/bestblogs-sources.json + config/bestblogs/opml/
+        #     — BestBlogs 源列表（import-bestblogs 可能从上游同步更新）
+        #
+        # [skip ci]：避免 push 后再次触发 CI，形成无限循环
+        # git diff --cached --quiet || commit：无变更时不创建空提交
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add feed-x.json feed-podcasts.json feed-blogs.json feed-bestblogs.json state-feed.json config/bestblogs-sources.json config/bestblogs/opml/
+          git diff --cached --quiet || git commit -m "chore: update feeds [skip ci]"
+          git push

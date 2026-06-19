@@ -1,0 +1,17 @@
+{
+  "name": "follow-builders-scripts",
+  "version": "1.0.0",
+  "_comment": "Follow Builders 脚本包。type=module 表示所有 .js 使用 ESM import；scripts 中的 generate-feed 用于中心 feed 生成，prepare-digest 用于用户侧给 LLM 打包输入。",
+  "description": "Scripts for Follow Builders skill — feed generation, digest preparation, delivery",
+  "type": "module",
+  "scripts": {
+    "generate-feed": "node generate-feed.js",
+    "generate-bestblogs-feed": "node generate-bestblogs-feed.js",
+    "prepare-digest": "node prepare-digest.js",
+    "import-bestblogs": "node import-bestblogs-opml.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.0",
+    "proper-lockfile": "^4.1.0"
+  }
+}

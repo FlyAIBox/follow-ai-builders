@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "Follow Builders 用户配置 schema。实际用户配置保存在 ~/.follow-builders/config.json；本文件用于说明字段含义、默认值和可选范围。信息源列表见 config/default-sources.json（精选）与 config/bestblogs-sources.json（BestBlogs 扩展），文档见 config/README.md。",
+  "description": "User configuration for Follow Builders skill. Stored at ~/.follow-builders/config.json",
+  "type": "object",
+  "properties": {
+    "platform": {
+      "$comment": "运行平台。openclaw 表示持久化 agent，可使用 OpenClaw channel 和 cron；other 表示 Claude Code、Cursor、Codex 等非持久或普通本地环境。",
+      "type": "string",
+      "enum": ["openclaw", "other"],
+      "description": "Detected platform: openclaw or other (Claude Code, Cursor, Codex, etc.)"
+    },
+    "language": {
+      "$comment": "摘要语言。zh 会将英文信息源翻译成中文；bilingual 适合想同时保留英文原意和中文解释的用户。",
+      "type": "string",
+      "enum": ["en", "zh", "bilingual"],
+      "default": "en",
+      "description": "Digest language: en (English), zh (Chinese), bilingual (both)"
+    },
+    "timezone": {
+      "$comment": "定时推送使用 IANA 时区，避免夏令时或跨地区部署导致推送时间漂移。",
+      "type": "string",
+      "default": "America/Los_Angeles",
+      "description": "IANA timezone string for scheduling (e.g. America/New_York, Asia/Shanghai)"
+    },
+    "frequency": {
+      "$comment": "推送频率。daily 更适合追热点；weekly 更适合低噪音复盘。",
+      "type": "string",
+      "enum": ["daily", "weekly"],
+      "default": "daily",
+      "description": "How often to deliver the digest"
+    },
+    "deliveryTime": {
+      "$comment": "本地时间的 24 小时制 HH:MM。调度器会结合 timezone 解释这个时间。",
+      "type": "string",
+      "default": "08:00",
+      "description": "Time of day to deliver digest in HH:MM format (24-hour)"
+    },
+    "weeklyDay": {
+      "$comment": "仅 frequency=weekly 时使用；daily 模式下可以保留但不会影响输出。",
+      "type": "string",
+      "enum": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
+      "default": "monday",
+      "description": "Day of week for weekly digests (only used when frequency is weekly)"
+    },
+    "delivery": {
+      "$comment": "交付配置。stdout 适合 Codex/OpenClaw 由上层 agent 直接展示；telegram/email 需要用户本地 .env 提供私钥。",
+      "type": "object",
+      "description": "How the digest is delivered to the user",
+      "properties": {
+        "method": {
+          "$comment": "stdout 不需要任何 API key；telegram 需要 TELEGRAM_BOT_TOKEN 和 chatId；email 需要 RESEND_API_KEY 和 email。",
+          "type": "string",
+          "enum": ["stdout", "telegram", "email"],
+          "default": "stdout",
+          "description": "Delivery method: stdout (terminal/agent), telegram (bot message), email (via Resend)"
+        },
+        "chatId": {
+          "$comment": "Telegram chat ID。用户必须先给 bot 发一条消息，Bot API 才能通过 getUpdates 找到 chatId。",
+          "type": "string",
+          "description": "Telegram chat ID (only for telegram method)"
+        },
+        "email": {
+          "$comment": "邮件接收地址。当前 deliver.js 使用 Resend API 发送纯文本摘要。",
+          "type": "string",
+          "description": "Email address to send digest to (only for email method)"
+        }
+      }
+    },
+    "onboardingComplete": {
+      "$comment": "首次设置完成标记。skill 看到 true 后不再重复进入 onboarding 流程。",
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the user has completed initial setup"
+    }
+  }
+}

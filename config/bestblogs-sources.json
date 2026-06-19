@@ -1,0 +1,3065 @@
+{
+  "_comment": "BestBlogs 扩展信息源。由 scripts/import-bestblogs-opml.js 从 OPML 生成，请勿手改条目；更新 OPML 后重新运行 import 脚本。",
+  "_attribution": {
+    "project": "BestBlogs",
+    "attribution_zh": "信息源 OPML 来自 bestblogs.dev 的公开分享",
+    "attribution_en": "OPML subscriptions shared publicly by bestblogs.dev",
+    "website": "https://bestblogs.dev",
+    "repository": "https://github.com/ginobefun/BestBlogs",
+    "article": "https://www.ginonotes.com/posts/bestblogs-sources-part2-podcasts-videos",
+    "philosophy_zh": "追踪那些真正在做产品、有独立见解的建造者（Builders），而非只会搬运信息的网红（Influencers）。",
+    "philosophy_en": "Follow builders who ship products and share original opinions — not influencers who only repackage news."
+  },
+  "_opml_files": {
+    "all": "config/bestblogs/opml/BestBlogs_RSS_ALL.opml",
+    "articles": "config/bestblogs/opml/BestBlogs_RSS_Articles.opml",
+    "podcasts": "config/bestblogs/opml/BestBlogs_RSS_Podcasts.opml",
+    "videos": "config/bestblogs/opml/BestBlogs_RSS_Videos.opml",
+    "twitters": "config/bestblogs/opml/BestBlogs_RSS_Twitters.opml"
+  },
+  "stats": {
+    "articles": 170,
+    "podcasts": 30,
+    "videos": 40,
+    "x_accounts": 160,
+    "total": 400
+  },
+  "blogs": [
+    {
+      "name": "人人都是产品经理",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/2d790e38f8af54c5af77fa5fed687a7c66d34c22.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "量子位",
+      "type": "rss",
+      "rssUrl": "https://www.qbitai.com/feed",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "LangChain Blog",
+      "type": "rss",
+      "rssUrl": "https://blog.langchain.dev/rss/",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "type": "rss",
+      "rssUrl": "https://huggingface.co/blog/feed.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "AWS Machine Learning Blog",
+      "type": "rss",
+      "rssUrl": "https://aws.amazon.com/blogs/amazon-ai/feed/",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Engineering at Meta",
+      "type": "rss",
+      "rssUrl": "https://engineering.fb.com/feed/",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Microsoft Azure Blog",
+      "type": "rss",
+      "rssUrl": "https://azure.microsoft.com/en-us/blog/feed/",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Elastic Blog",
+      "type": "rss",
+      "rssUrl": "https://www.elastic.co/blog/feed",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Grafana Labs",
+      "type": "rss",
+      "rssUrl": "https://grafana.com/categories/engineering/index.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "宝玉的分享",
+      "type": "rss",
+      "rssUrl": "https://baoyu.io/feed.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "掘金本周最热",
+      "type": "rss",
+      "rssUrl": "https://rsshub.bestblogs.dev/juejin/trending/all/weekly",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "deeplearning.ai",
+      "type": "rss",
+      "rssUrl": "https://rsshub.bestblogs.dev/deeplearning/the-batch",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "腾讯技术工程",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/1e0ac39f8952b2e7f0807313cf2633d25078a171.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "ByteByteGo Newsletter",
+      "type": "rss",
+      "rssUrl": "https://blog.bytebytego.com/feed",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Google Cloud Blog",
+      "type": "rss",
+      "rssUrl": "https://cloudblog.withgoogle.com/rss/",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Last Week in AI",
+      "type": "rss",
+      "rssUrl": "https://lastweekin.ai/feed/",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Next.js Blog",
+      "type": "rss",
+      "rssUrl": "https://nextjs.org/feed.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "David Heinemeier Hansson",
+      "type": "rss",
+      "rssUrl": "https://world.hey.com/dhh/feed.atom",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "type": "rss",
+      "rssUrl": "https://deepmind.com/blog/feed/basic/",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Martin Fowler",
+      "type": "rss",
+      "rssUrl": "https://martinfowler.com/feed.atom",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "AWS Architecture Blog",
+      "type": "rss",
+      "rssUrl": "https://www.awsarchitectureblog.com/atom.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Spring Blog",
+      "type": "rss",
+      "rssUrl": "https://spring.io/blog.atom",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "UX Magazine",
+      "type": "rss",
+      "rssUrl": "https://uxmag.com/feed/",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "The JetBrains Blog",
+      "type": "rss",
+      "rssUrl": "https://blog.jetbrains.com/feed/",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Microsoft Research Blog",
+      "type": "rss",
+      "rssUrl": "https://research.microsoft.com/rss/news.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "InfoQ",
+      "type": "rss",
+      "rssUrl": "https://www.infoq.com/rss/rss.action",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Smashing Magazine",
+      "type": "rss",
+      "rssUrl": "https://rss1.smashingmagazine.com/feed/",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "机器之心",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/8d97af31b0de9e48da74558af128a4673d78c9a3.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "爱范儿",
+      "type": "rss",
+      "rssUrl": "https://www.ifanr.com/feed",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "The IntelliJ IDEA Blog",
+      "type": "rss",
+      "rssUrl": "https://blogs.jetbrains.com/idea/feed/",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "阮一峰的网络日志",
+      "type": "rss",
+      "rssUrl": "https://feeds.feedburner.com/ruanyifeng",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "The GitHub Blog",
+      "type": "rss",
+      "rssUrl": "https://github.blog/feed/",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "freeCodeCamp.org",
+      "type": "rss",
+      "rssUrl": "https://www.freecodecamp.org/news/rss/",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "OpenAI Blog",
+      "type": "rss",
+      "rssUrl": "https://openai.com/news/rss.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "MongoDB Blog",
+      "type": "rss",
+      "rssUrl": "https://www.mongodb.com/blog/rss",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Databricks",
+      "type": "rss",
+      "rssUrl": "https://www.databricks.com/feed",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Visual Studio Blog",
+      "type": "rss",
+      "rssUrl": "https://devblogs.microsoft.com/visualstudio/feed/",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Google Developers Blog",
+      "type": "rss",
+      "rssUrl": "https://developers.googleblog.com/feeds/posts/default",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Node.js Blog",
+      "type": "rss",
+      "rssUrl": "https://nodejs.org/en/feed/blog.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Docker",
+      "type": "rss",
+      "rssUrl": "https://www.docker.com/feed/",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "阿里技术",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/6535a444e9651fecae3383363be7589acdebe2b6.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "小米技术",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/8bbc1ba1d363e70cd42d1ce89fb9070cb075c3b3.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "哔哩哔哩技术",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/3a12ae4fde5bb74aab2fddc9f710a3c057eab82f.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "阿里云开发者",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/39fc51b0b1316137e608c45da5dbbca4f9eb9538.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "字节跳动技术团队",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/d3a9e4d6f125cc98d1691dbc30cd97fec7ae2d03.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "极客公园",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/11ea7163fbea99e2ab9fa2812ac3d179574886cc.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "美团技术团队",
+      "type": "rss",
+      "rssUrl": "https://tech.meituan.com/feed/",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Stack Overflow Blog",
+      "type": "rss",
+      "rssUrl": "https://blog.stackoverflow.com/feed/",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Vercel News",
+      "type": "rss",
+      "rssUrl": "https://vercel.com/atom",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "The Cloudflare Blog",
+      "type": "rss",
+      "rssUrl": "https://blog.cloudflare.com/rss",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "ShowMeAI研究中心",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/854a592a3bac3c2574d092daf4628cf65dfd1858.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "奇舞精选",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/156a64fe3e95eebe4b85bf981d6ebb85441897bf.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "京东技术",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/fa0be550682410cc187c0d1eab1a0fc4e073b949.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "硅谷科技评论",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/4515ee058133ff68570ad586abdd81f54f2b6ee3.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "得物技术",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/1cde72c9129b1f79cbb150166e7fed9a7568ee10.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "百度Geek说",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/6cc437d76f9dc4f7c35011c72e471e33e7bdd384.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "大淘宝技术",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/26fef2307bebc8673703f7e726982d8f56c9a219.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Web3天空之城",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/6aac3cc6d4c6df6fb3f77dea4ea4ba4a2053d6e7.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "AI前线",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/25185b01482da0f485418ecb92e208b4416712fb.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "新智元",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/e531a18b21c34cf787b83ab444eef659d7a980de.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "51CTO技术栈",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/d1fabe6c569ffc44979075dde2f57c65e07c3045.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "优设",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/8fee9d33e883a769a59a5a3e27d249cf8567b55a.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "前端充电宝",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/efed19b684285ee14f88b3f234b350fba9376d7a.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "稀土掘金技术社区",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/33ecd2122ae788ea02dfcf1df857a54b9ae1338d.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "腾讯云开发者",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/6cec2c211479a5502896375860009782cf10c2ba.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "体验进阶",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/083c360a74b36b2c33820a995d21cbf60c813c0a.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "前端早读课",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/ce2456e157156d42259c1198f05a33e27b1ed959.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "开源服务指南",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/c125f09ef36fd6b6cb092c409e69a5bcc867d378.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "dbaplus社群",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/a92cc44a756e2b9165fed5572aa7337843a73eee.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "超人的电话亭",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/4be15abcd5621887bb7c1e2efd2d1cd8c68a16f0.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Qunar技术沙龙",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/84c072f8d34d1690f2783d7dda6013cf6d892b7f.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "42章经",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/f6694726ced4ba3d7c7cd65c6edf2160c5978387.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "随机小分队",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/115e814e7b12d373a55459cb2aea3223152f2af2.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "阿里研究院",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/e2f1190c120f7f3d74b630bfcfe9e58296bd535c.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "深思圈",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/3e6fcb56a39b2e18f1036113655d4ff8fe726b62.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Hugging Face",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/8b68fdb4f24ab2287100988a8cec36363fec4214.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "创业邦",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/f5e0d8e342d9e2ec5b2942f08522cfaec17acc8d.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Founder Park",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/f940695505f2be1399d23cc98182297cadf6f90d.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "vivo互联网技术",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/b3ceb5cb1e4602ca55704650a157ec9c5b2f0d31.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "歸藏的AI工具箱",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/1c3e3571b1627d23ee9c64521a0b0a41d3fe2987.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Clip设计夹",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/ebd5f5bd705dd531066eeca5ee500a1e6a269e17.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "The Keyword (blog.google) ",
+      "type": "rss",
+      "rssUrl": "https://blog.google/rss",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "腾讯科技",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/a81bdfcbb9eefe870d285e81510ffa1af26e4520.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "InfoQ 中文",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/13da94d7eb314b49fa251cb7e8399cae29d772db.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "LlamaIndex Blog",
+      "type": "rss",
+      "rssUrl": "https://www.llamaindex.ai/blog/feed",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Dify",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/e46c03a4cb65509e22ab9a8507888a2096319d65.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "海外独角兽",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/7200d3a5e976d231deb1e40ad33745c0e649b029.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "CSDN",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/b0b7f2852aecdcc5a0eb08d33afc1c08b855d98b.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "谷歌开发者",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/9c65b8470acb8a5400199616536995d5ba90f52e.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "赛博禅心",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/752c31ca0446b837339463fc5440539e20267d2f.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "笔记侠",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/4c5d9bcc2fbfcd1dc81fb67559653f8957ef4760.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "小红书技术REDtech",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/0f8c47df6fd304112518544776e0bbf1d98ba0b9.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "智谱",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/433d2134dca54d80804daf32e8be546155be3300.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "月之暗面 Kimi",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/c5c43d4bc17bae656763859ed0903bb6314ec6fe.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "通义大模型",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/4ebee6222ae08705b8aabc9116f0defbcb6b17c6.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "百度AI",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/d0767d885e6ba213344fb0c0408c51331e23a994.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "HelloGitHub",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/e6cc80b97bf64eeef61cc5927c78ba6ce3356422.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "经纬创投",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/05efb1c4cf91e5a37443cc323150ea38a838e9fd.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "腾讯混元",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/306ce19a1ca590c9c2df781789e828d1acfa1356.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Qdrant",
+      "type": "rss",
+      "rssUrl": "https://qdrant.tech/index.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "刘润",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/c1354f67c314d25d6e236a58724043bdc46d6079.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "吴晓波频道",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/604fd0bfbb0214958f7fd2718509e4ea038c6afc.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "智东西",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/cfd52b4245ca6119b2fda4ef934832c689028927.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "腾讯研究院",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/6152301e0978bffb0a8284cab339262b9764dcfb.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "SuperTechFans",
+      "type": "rss",
+      "rssUrl": "https://www.supertechfans.com/cn/index.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "有机大橘子",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/6cef434b771dd75a91864b2e699a622cb4e3eb33.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Thoughtworks洞见",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/96b507f9985efa59e549e95a6363c2b6edfa8f2e.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "浮之静",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/abb0de0c0cb8f684a1606a4b20121b245547adce.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "数字生命卡兹克",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/ff621c3e98d6ae6fceb3397e57441ffc6ea3c17f.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "AI产品黄叔",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/1f1030491e15e5349aae42367513d6b3f70a8f8b.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "印记中文",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/2b038bb5307a75a603405f7191b5030576d3e8bd.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "真格基金",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/47798a14d51da72e68fae4f7a259f096750cf03e.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "大模型智能",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/bfc6440c1a2443fab9a6bf607137d41db5cd5c93.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "甲子光年",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/1c4008936645d5c17239d99bba91522cf2bdfa26.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Z Potentials",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/c47f4bc00ea912c37b6e23b22b146db0e85b3e19.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "深网腾讯新闻",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/396591aa7d3ef15fa3b5b17ec4b1aa840ebde335.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "AI炼金术",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/4915f3747653bbb9c7975323c11b768d2b9cd6c9.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "白鲸出海",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/2b8f03a73a0f2ac92a8ca69c124e5be6f442dbdc.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "硅星人Pro",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/c62ceda9eed269d851802bdbc5f33c4fabbf7462.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "AI科技评论",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/789e5fefb9cc2646ba7b680cb7a88378a34eb7a4.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "山行AI",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/98bc16b6f53902a2ab511b4faa3499e0a1c78eb1.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "魔搭ModelScope社区",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/d993a885260f96057b9a4c96212cb2c95bb5054b.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "强少来了",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/3c36fe804f63a7b936e372a37929d81fa0ad948a.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "土猛的员外",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/3ee671d065adc460bc20bbd269115987098c54a0.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "暗涌Waves",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/bd586c1499b56aaec02dfefa87126232d234b010.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "夕小瑶科技说",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/64b57d666259aee6bd097e76164e4a8371f0ad04.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "DeeplearningAI",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/9d094d066a5faacff0eb0a6b95efbba20d4f1fc9.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "机器之心SOTA模型",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/2f520471856d56c7b3a95cd09eb777149b32828a.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "阶跃星辰",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/3e2714d06aa36142e8ed6b3f4e5cf9090a069dd2.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "快手技术",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/c4cc10d2e32a5fa12927581ae581a336f399fe75.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "DeepSeek",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/1709da4f538d4ce4fb6d7a8ba1a5a1c297919601.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "字节跳动Seed",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/6efd40bb335d2037f365d284cb5e00f0843e737e.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "十字路口Crossing",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/20492a5f2d3637c178c01ab0bab7ed86a4a0995b.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "青哥谈AI",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/00a1da3493512c20aff1ea5a0d1a02537e931b36.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "AI Musings by Mu",
+      "type": "rss",
+      "rssUrl": "https://kelvinmu.substack.com/feed",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Latent Space",
+      "type": "rss",
+      "rssUrl": "https://www.latent.space/feed",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "AI寒武纪",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/5903009f48a5e4aa44d8ac941a54fe3aafc3e03c.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "MiniMax 稀宇科技",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/00306b171f754d463b28cf83f3ba086ad009b430.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Jina AI",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/ff2c5468828ebe7236afd6c1d128e219774487c2.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "花叔",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/ed3e181242a4622709081439d802523ecf7b78f2.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Datawhale",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/ea0dd8bddfe4fbfb32eaa81a1e1b628d45e97a80.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "AINLP",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/875df1d1a991bf9250ba9813e3148f58ef2240d4.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Groq",
+      "type": "rss",
+      "rssUrl": "https://api.bestblogs.dev/feed/groqBlog",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "ElevenLabs Blog",
+      "type": "rss",
+      "rssUrl": "https://api.bestblogs.dev/feed/elevenLabsBlog",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "FireCrawl Blog",
+      "type": "rss",
+      "rssUrl": "https://api.bestblogs.dev/feed/fireCrawlBlog",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Gino Notes",
+      "type": "rss",
+      "rssUrl": "https://www.ginonotes.com/feed.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "向阳乔木推荐看",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/3e50f11753a7c5ed689565fbf5abf96cb4541c57.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Simon Willison's Weblog",
+      "type": "rss",
+      "rssUrl": "https://simonwillison.net/atom/everything/",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "乌鸦智能说",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/f21c3e34df9b5fecfda57e2e53512864255ed4cd.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "yikai 的摸鱼笔记",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/13492cb50df57702cdc0dfa71467cd03f9dd69be.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "李继刚",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/9645a69180041ff935c458753174fa8bc2061295.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "沃垠AI",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/339818dbd5154cecdf5f4161f3391c7038a72bae.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "L先生说",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/31c7fb6f7959a5ff90ae997b536e78b8b3f23321.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "有新Newin",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/74554dcb3da8982083426b871bc8c314a9de9729.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "晚点LatePost",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/c442206ec9957f3c52f2f40300ca532079538b31.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "袋鼠帝AI客栈",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/24d0930cc9f4f0c708182dc1c087d41e1f4cbd33.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "AI科技大本营",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/dfd3b5e742e32d8032a445832373191957202bf3.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "卡尔的AI沃茨",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/8a1fc997e5c742e91ad7c253836c28ca3a69ccb1.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "逛逛GitHub",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/38be32e5376d852c13d3383e4d7a757fd9a55ff6.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "阿真Irene",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/d5ead392b0cf117d0ba4070e2261111fdde49711.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "网易科技",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/028fbc21062e744c7b606880ebca01e22cb4b7b7.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "架构师之路",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/f6dec1c3ad16e43532dd427c85eaeb3a7b7b084e.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "硅谷101",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/8f8fe34034f6123b168ed7847c51d50ff47cd7ee.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Anthropic News",
+      "type": "rss",
+      "rssUrl": "https://rsshub.bestblogs.dev/anthropic/news",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "AI at Meta Blog",
+      "type": "rss",
+      "rssUrl": "https://rsshub.app/meta/ai/blog",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "少数派",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/f0e37a7d597231efed4bf6dd05b5d904de6dbcc1.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "语言即世界language is world",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/e1ed0d3edd93f90aef602105eb7ca51b35b7060a.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "刘小排r",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/484d4199ae6c0b72ea01e7e0597a1f74933dfb62.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Elevate",
+      "type": "rss",
+      "rssUrl": "https://addyo.substack.com/feed",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "43 Talks",
+      "type": "rss",
+      "rssUrl": "https://wechat2rss.bestblogs.dev/feed/4efe7ec6970afd4a050d6f10b9e8131a9d5e6816.xml",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "What's Next｜科技早知道",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/5e74b52c418a84a046ecaceb",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/5e74b52c418a84a046ecaceb",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "无人知晓",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/611719d3cb0b82e1df0ad29e",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/611719d3cb0b82e1df0ad29e",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "硅谷101",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/5e5c52c9418a84a04625e6cc",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/5e5c52c9418a84a04625e6cc",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "三五环",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/5e280fab418a84a0461faa3c",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/5e280fab418a84a0461faa3c",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "张小珺Jùn｜商业访谈录",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/626b46ea9cbbf0451cf5a962",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/626b46ea9cbbf0451cf5a962",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "42章经",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/648b0b641c48983391a63f98",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/648b0b641c48983391a63f98",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "十字路口Crossing",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/60502e253c92d4f62c2a9577",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/60502e253c92d4f62c2a9577",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "知行小酒馆",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/6013f9f58e2f7ee375cf4216",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/6013f9f58e2f7ee375cf4216",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "纵横四海",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/62694abdb221dd5908417d1e",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/62694abdb221dd5908417d1e",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "乱翻书",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/61358d971c5d56efe5bcb5d2",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/61358d971c5d56efe5bcb5d2",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "OnBoard!",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/61cbaac48bb4cd867fcabe22",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/61cbaac48bb4cd867fcabe22",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "硬地骇客",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/640ee2438be5d40013fe4a87",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/640ee2438be5d40013fe4a87",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "AI炼金术",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/63e9ef4de99bdef7d39944c8",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/63e9ef4de99bdef7d39944c8",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "人民公园说AI",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/65257ff6e8ce9deaf70a65e9",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/65257ff6e8ce9deaf70a65e9",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "保持偏见",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/663e3c95af1e22bb157dcee3",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/663e3c95af1e22bb157dcee3",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "枫言枫语",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/5e2864f5418a84a04628e249",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/5e2864f5418a84a04628e249",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "屠龙之术",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/6507bc165c88d2412626b401",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/6507bc165c88d2412626b401",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "晚点聊 LateTalk",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/61933ace1b4320461e91fd55",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/61933ace1b4320461e91fd55",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "开始连接LinkStart",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/63ff0da51b1faf8a0b70b337",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/63ff0da51b1faf8a0b70b337",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "此话当真",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/646f194853a5e5ea1408d97c",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/646f194853a5e5ea1408d97c",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "跨国串门儿计划",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/670f3da40d2f24f28978736f",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/670f3da40d2f24f28978736f",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "卫诗婕｜商业漫谈Jane's talk",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/6627fda4b56459544087d86a",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/6627fda4b56459544087d86a",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "东腔西调",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/5f72b66083c34e85dd14fde9",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/5f72b66083c34e85dd14fde9",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "皮蛋漫游记",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/6281264ad22bcf3950c80b56",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/6281264ad22bcf3950c80b56",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "奇想驿 by 产品沉思录",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/6034daea97755b8fc9c66480",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/6034daea97755b8fc9c66480",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "牛油果烤面包",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/5e7c8b2b418a84a046e3ecbc",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/5e7c8b2b418a84a046e3ecbc",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "半拿铁 | 商业沉浮录",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/62382c1103bea1ebfffa1c00",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/62382c1103bea1ebfffa1c00",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "自习室 STUDY ROOM",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/65a5fb7540d4ef949c0140ac",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/65a5fb7540d4ef949c0140ac",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "天真不天真",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/65cef9e3cace72dff8d98de3",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/65cef9e3cace72dff8d98de3",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    },
+    {
+      "name": "罗永浩的十字路口",
+      "rssUrl": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/68981df29e7bcd326eb91d88",
+      "url": "https://rsshub.bestblogs.dev/xiaoyuzhou/podcast/68981df29e7bcd326eb91d88",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选播客。"
+    }
+  ],
+  "videos": [
+    {
+      "name": "Anthropic",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCrDwWp7EBBv4NwvScIpBDOA",
+      "url": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "AI Engineer",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCLKPca3kwwd-B59HNr-_lvA",
+      "url": "https://www.youtube.com/channel/UCLKPca3kwwd-B59HNr-_lvA",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "No Priors",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSI7h9hydQ40K5MJHnCrQvw",
+      "url": "https://www.youtube.com/channel/UCSI7h9hydQ40K5MJHnCrQvw",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "OpenAI",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXZCJLdBC09xxGZ6gcdrc6A",
+      "url": "https://www.youtube.com/channel/UCXZCJLdBC09xxGZ6gcdrc6A",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Google DeepMind",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "url": "https://www.youtube.com/channel/UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "leerob",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCZMli3czZnd1uoc1ShTouQw",
+      "url": "https://www.youtube.com/channel/UCZMli3czZnd1uoc1ShTouQw",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Y Combinator",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCcefcZRL2oaA_uBNeo5UOWg",
+      "url": "https://www.youtube.com/channel/UCcefcZRL2oaA_uBNeo5UOWg",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Lenny's Podcast",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC6t1O76G0jYXOAoYCm153dA",
+      "url": "https://www.youtube.com/channel/UC6t1O76G0jYXOAoYCm153dA",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Sequoia Capital",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWrF0oN6unbXrWsTN7RctTw",
+      "url": "https://www.youtube.com/channel/UCWrF0oN6unbXrWsTN7RctTw",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Stripe",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCM1guA1E-RHLO2OyfQPOkEQ",
+      "url": "https://www.youtube.com/channel/UCM1guA1E-RHLO2OyfQPOkEQ",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Fireship",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA",
+      "url": "https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Spring I/O",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCLMPXsvSrhNPN3i9h-u8PYg",
+      "url": "https://www.youtube.com/channel/UCLMPXsvSrhNPN3i9h-u8PYg",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Dwarkesh Patel",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXl4i9dYBrFOabk0xGmbkRA",
+      "url": "https://www.youtube.com/channel/UCXl4i9dYBrFOabk0xGmbkRA",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Lex Fridman",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSHZKyawb77ixDdsGog4iWA",
+      "url": "https://www.youtube.com/channel/UCSHZKyawb77ixDdsGog4iWA",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Hung-yi Lee",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC2ggjtuuWvxrHHHiaDH1dlQ",
+      "url": "https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "a16z",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC9cn0TuPq4dnbTY-CBsm8XA",
+      "url": "https://www.youtube.com/channel/UC9cn0TuPq4dnbTY-CBsm8XA",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "The Diary Of A CEO Clips",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCnjgxChqYYnyoqO4k_Q1d6Q",
+      "url": "https://www.youtube.com/channel/UCnjgxChqYYnyoqO4k_Q1d6Q",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "AI Master",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC0yHbz4OxdQFwmVX2BBQqLg",
+      "url": "https://www.youtube.com/channel/UC0yHbz4OxdQFwmVX2BBQqLg",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Matt Wolfe",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UChpleBmo18P08aKCIgti38g",
+      "url": "https://www.youtube.com/channel/UChpleBmo18P08aKCIgti38g",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "AICodeKing",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC0m81bQuthaQZmFbXEY9QSw",
+      "url": "https://www.youtube.com/channel/UC0m81bQuthaQZmFbXEY9QSw",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Liam Ottley",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCui4jxDaMb53Gdh-AZUTPAg",
+      "url": "https://www.youtube.com/channel/UCui4jxDaMb53Gdh-AZUTPAg",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Wes Roth",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCqcbQf6yw5KzRoDDcZ_wBSw",
+      "url": "https://www.youtube.com/channel/UCqcbQf6yw5KzRoDDcZ_wBSw",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Andrej Karpathy",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXUPKJO5MZQN11PqgIvyuvQ",
+      "url": "https://www.youtube.com/channel/UCXUPKJO5MZQN11PqgIvyuvQ",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Jason West",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCQ-rZd0NpjXYTpB3y5BNxPw",
+      "url": "https://www.youtube.com/channel/UCQ-rZd0NpjXYTpB3y5BNxPw",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Greg Isenberg",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCPjNBjflYl0-HQtUvOx0Ibw",
+      "url": "https://www.youtube.com/channel/UCPjNBjflYl0-HQtUvOx0Ibw",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "My First Million",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCyaN6mg5u8Cjy2ZI4ikWaug",
+      "url": "https://www.youtube.com/channel/UCyaN6mg5u8Cjy2ZI4ikWaug",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Riley Brown",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCMcoud_ZW7cfxeIugBflSBw",
+      "url": "https://www.youtube.com/channel/UCMcoud_ZW7cfxeIugBflSBw",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Tina Huang",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC2UXDak6o7rBm23k3Vv5dww",
+      "url": "https://www.youtube.com/channel/UC2UXDak6o7rBm23k3Vv5dww",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Last Week in AI",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCKARTq-t5SPMzwtft8FWwnA",
+      "url": "https://www.youtube.com/channel/UCKARTq-t5SPMzwtft8FWwnA",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "All-In Podcast",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCESLZhusAkFfsNsApnjF_Cg",
+      "url": "https://www.youtube.com/channel/UCESLZhusAkFfsNsApnjF_Cg",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "AI Explained",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "url": "https://www.youtube.com/channel/UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Two Minute Papers",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg",
+      "url": "https://www.youtube.com/channel/UCbfYPyITQ-7l4upoX8nvctg",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Matthew Berman",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCawZsQWqfGSbCI5yjkdVkTA",
+      "url": "https://www.youtube.com/channel/UCawZsQWqfGSbCI5yjkdVkTA",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "freeCodeCamp.org",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC8butISFwT-Wl7EV0hUK0BQ",
+      "url": "https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "ByteByteGo",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCZgt6AzoyjslHTC9dz0UoTw",
+      "url": "https://www.youtube.com/channel/UCZgt6AzoyjslHTC9dz0UoTw",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Product School",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC6hlQ0x6kPbAGjYkoz53cvA",
+      "url": "https://www.youtube.com/channel/UC6hlQ0x6kPbAGjYkoz53cvA",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "yobi321",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCB_DbqNN9w30tnyWJSrIwyA",
+      "url": "https://www.youtube.com/channel/UCB_DbqNN9w30tnyWJSrIwyA",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "TED",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCAuUUnT6oDeKwE6v1NGQxug",
+      "url": "https://www.youtube.com/channel/UCAuUUnT6oDeKwE6v1NGQxug",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "LangChain",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCC-lyoTfSrcJzA1ab3APAgw",
+      "url": "https://www.youtube.com/channel/UCC-lyoTfSrcJzA1ab3APAgw",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    },
+    {
+      "name": "Siraj Raval",
+      "rssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWN3xxRkmTPmbKwht9FuE5A",
+      "url": "https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "focus": "来自 bestblogs.dev 精选视频频道。"
+    }
+  ],
+  "x_accounts": [
+    {
+      "name": "OpenAI",
+      "handle": "OpenAI",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/0c0856a69f9f49cf961018c32a0b0049",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "OpenAI Developers",
+      "handle": "OpenAIDevs",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/971dc1fc90da449bac23e5fad8a33d55",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "ChatGPT",
+      "handle": "ChatGPTapp",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/f7992687b8d74b14bf2341eb3a0a5ec4",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Sam Altman",
+      "handle": "sama",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/e30d4cd223f44bed9d404807105c8927",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Anthropic",
+      "handle": "AnthropicAI",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/fc28a211471b496682feff329ec616e5",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Dario Amodei",
+      "handle": "DarioAmodei",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/49666ce6fe3e4cb786c6574684542ec5",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Alex Albert",
+      "handle": "alexalbert__",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/524525de0d69407b80f0a7d891fdc8df",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Greg Brockman",
+      "handle": "gdb",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/af19d054e26a49129f23abfa82d9e268",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Mike Krieger",
+      "handle": "mikeyk",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/78d7b99318b04b309b04000f7e24da29",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Kevin Weil ",
+      "handle": "kevinweil",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/3ca3c7698fd04611a0e7d14fae93c84c",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Marc Andreessen ",
+      "handle": "pmarca",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/63316630d94543f5a6480f230f483008",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Microsoft Research",
+      "handle": "MSFTResearch",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/61f4b78554fb4b8fa5653ec5d924d15a",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Andrej Karpathy",
+      "handle": "karpathy",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/edf707b5c0b248579085f66d7a3c5524",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Google AI",
+      "handle": "GoogleAI",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/4de0bd2d5cef4333a0260dc8157054a7",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Yann LeCun",
+      "handle": "ylecun",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/f5f4f928dede472ea55053672ad27ab6",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Anton Osika – eu/acc",
+      "handle": "antonosika",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/5f13b32b124a41cfb659f903a84032b1",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Lovable",
+      "handle": "lovable_dev",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/639cd13d44284e10ac89fbd1c5399767",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Fei-Fei Li",
+      "handle": "drfeifei",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/a4bfe44bfc0d4c949da21ebd3f5f42a5",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Amjad Masad",
+      "handle": "amasad",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/5fb1814c610c4af2911caa98c5c5ef82",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Replit ⠕",
+      "handle": "Replit",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/613f859e4bc440c5a28f40732840f5cf",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "clem 珞",
+      "handle": "ClementDelangue",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/5dbd038a8f5140938d0877511571797b",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Hugging Face",
+      "handle": "huggingface",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/fc16750ce50741f1b1f05ea1fb29436f",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Andrew Ng",
+      "handle": "AndrewYNg",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/08b5488b20bc437c8bfc317a52e5c26d",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "DeepLearning.AI",
+      "handle": "DeepLearningAI",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/42e6b4901b97498eab2ab64c07d56177",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Thomas Wolf",
+      "handle": "Thom_Wolf",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/4918efb13c47459b8dcaa79cfdf72d09",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Logan Kilpatrick",
+      "handle": "OfficialLoganK",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/4f63d960de644aeebd0aa97e4994dafe",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Lex Fridman",
+      "handle": "lexfridman",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/adf65931519340f795e2336910b4cd15",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Rowan Cheung",
+      "handle": "rowancheung",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/a636de3cbda0495daabd15b9fd298614",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "李继刚",
+      "handle": "lijigang_com",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/ca2fa444b6ea4b8b974fe148056e497a",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Demis Hassabis",
+      "handle": "demishassabis",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/4a884d5e2f3740c5a26c9c093de6388a",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "bolt.new",
+      "handle": "boltdotnew",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/760ab7cd9708452c9ce1f9144b92a430",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Mustafa Suleyman",
+      "handle": "mustafasuleyman",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/394acfaff8c44e09936f5bc0b8504f2c",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Sualeh Asif",
+      "handle": "sualehasif996",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/fafa6df3c67644b1a367a177240e0173",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Junyang Lin",
+      "handle": "JustinLin610",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/082097117b4543e9a741cd2580f936d3",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Qwen",
+      "handle": "Alibaba_Qwen",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/80032d016d654eb4afe741ff34b7643d",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Binyuan Hui",
+      "handle": "huybery",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/f54b2b40185943ce8f48a880110b7bc2",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Google DeepMind",
+      "handle": "GoogleDeepMind",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/a99538443a484fcc846bdcc8f50745ec",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "NVIDIA AI",
+      "handle": "NVIDIAAI",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/05f1492e43514dc3862a076d3697c390",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Ian Goodfellow",
+      "handle": "goodfellow_ian",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/57831559d22440debbfb2f2528e4ba84",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Groq Inc",
+      "handle": "GroqInc",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/771b32075fe54a83bdb6966de9647b4f",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Berkeley AI Research",
+      "handle": "berkeley_ai",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/6bbf31cac345443585c3280320ba9009",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Jeff Dean",
+      "handle": "JeffDean",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/b1013166769c49f8aa3fbdc222867054",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Justine Moore",
+      "handle": "venturetwins",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/c61046471f174d86bc0eb76cb44a21c3",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Scott Wu",
+      "handle": "ScottWu46",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/5fca8ccd87344d388bc863304ed6fd86",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Cognition",
+      "handle": "cognition_labs",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/4cc14cbd15c74e189d537c415369e1a7",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Weaviate • vector database",
+      "handle": "weaviate_io",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/2f1035ec6b28475987af06b600e1d04c",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Runway",
+      "handle": "runwayml",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/e6bb4f612dd24db5bc1a6811e6dd5820",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "AI at Meta",
+      "handle": "AIatMeta",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/ef7c70f9568d45f4915169fef4ce90b4",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Stanford AI Lab",
+      "handle": "StanfordAILab",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/d5fc365556e641cba2278f501e8c6f92",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Geoffrey Hinton",
+      "handle": "geoffreyhinton",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/cb6169815e2e447e8e6148a4af3f9686",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Patrick Loeber",
+      "handle": "patloeber",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/c65c68f3713747bba863f92d6b5e996f",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Philipp Schmid",
+      "handle": "_philschmid",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/ce352bbf72e44033985bc756db2ee0e2",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Milvus",
+      "handle": "milvusio",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/424e67b19eed4500b7a440976bbd2ade",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Jina AI",
+      "handle": "JinaAI_",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/f510f6e7eecf456ca7e2895a46752888",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Justin Welsh",
+      "handle": "thejustinwelsh",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/58894bf2934a426ca833c682da2bc810",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Midjourney",
+      "handle": "midjourney",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/72dd496bfd9d44c5a5761a974630376d",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "cohere",
+      "handle": "cohere",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/462aa134ed914f98b3491680ad9b36ed",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Qdrant",
+      "handle": "qdrant_engine",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/a55f6e33dd224235aabaabaaf9d58a06",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "AI Engineer",
+      "handle": "aiDotEngineer",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/7d19a619a1cc4a9896129211269d2c85",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Latent.Space",
+      "handle": "latentspacepod",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/a7be8b61a1264ea7984abfaea3eff686",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Character.AI",
+      "handle": "character_ai",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/3877c31cdb554cffb750b3b683c98c4d",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "ElevenLabs",
+      "handle": "elevenlabsio",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/1897eed387064dfab443764d6da50bc6",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Taranjeet",
+      "handle": "taranjeetio",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/2de92402f4a24c90bb27e7580b93a878",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "mem0",
+      "handle": "mem0ai",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/94bb691baeff461686326af619beb116",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "HeyGen",
+      "handle": "HeyGen_Official",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/a9aff6b016c143ed8728dd86eb70d7db",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Paul Couvert",
+      "handle": "itsPaulAi",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/b9912ac9a29042cf8c834419dc44cb1f",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "LangChain",
+      "handle": "LangChainAI",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/862fee50a745423c87e2633b274caf1d",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Harrison Chase",
+      "handle": "hwchase17",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/f299207df53745bca04a03db8d11c5aa",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Recraft",
+      "handle": "recraftai",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/acc648327c614d9b985b9fc3d737165b",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Perplexity",
+      "handle": "perplexity_ai",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/fdd601ea751949e7bec9e4cdad7c8e6c",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Aravind Srinivas",
+      "handle": "AravSrinivas",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/59e6b63ae9684d11be0ae13d9e7420f2",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "LlamaIndex 蓮",
+      "handle": "llama_index",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/67e259bd5be544ce84bbc867eace54c2",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Jerry Liu",
+      "handle": "jerryjliu0",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/b3d904c0d7c446558ef3a1e7f2eb362b",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Dify",
+      "handle": "dify_ai",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/0be252fedbe84ad7bea21be44b18da89",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Julien Chaumond",
+      "handle": "julien_c",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/44d9fa384087448a94d3c8595f8d535e",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "ollama",
+      "handle": "ollama",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/6326c63a2dfa445bbde88bea0c3112c2",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "FlowiseAI",
+      "handle": "FlowiseAI",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/be74da51698d4cefb12b39830d6cd201",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Pika",
+      "handle": "pika_labs",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/3306d8b253ec4e03aca3c2e9967e7119",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "xAI",
+      "handle": "xai",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/3953aa71e87a422eb9d7bf6ff1c7c43e",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Ideogram",
+      "handle": "ideogram_ai",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/a719880fe66e4156a111187f50dae91b",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Mistral AI",
+      "handle": "MistralAI",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/8d2d03aea8af49818096da4ea00409d1",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "OpenRouter",
+      "handle": "OpenRouterAI",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/e503a90c035c4b1d8f8dd34907d15bf4",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "v0",
+      "handle": "v0",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/dbf37973e6fc4eae91d4be9669a78fc7",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "AI SDK",
+      "handle": "aisdk",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/22af005b21ec45b1a4503acca777b7f0",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Fish Audio",
+      "handle": "FishAudio",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/4900b3dcd592424687582ff9e0f148ea",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Hailuo AI (MiniMax)",
+      "handle": "Hailuo_AI",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/e65b5e59fcb544918c1ba17f5758f0f8",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Windsurf",
+      "handle": "windsurf_ai",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/4a8273800ed34a069eecdb6c5c1b9ccf",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Varun Mohan",
+      "handle": "_mohansolo",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/7794c4268a504019a94af1778857a703",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "宝玉",
+      "handle": "dotey",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/97f1484ae48c430fbbf3438099743674",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "ManusAI",
+      "handle": "ManusAI_HQ",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/320181c4651a41a08015946b55f704ab",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "AK",
+      "handle": "_akhaliq",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/341f7b9f8d9b477e8bb200caa7f32c6e",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "LovartAI",
+      "handle": "lovart_ai",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/db648e4d4eae4822aa0d34f0faef7ad2",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Figma",
+      "handle": "figma",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/f8a106a09a7d404fb8de7eb0c5ddd2a2",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Cursor",
+      "handle": "cursor_ai",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/5287b4e0e13a4ab7ab7b1d56f9d88960",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Aman Sanger",
+      "handle": "amanrsanger",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/a02496979a0e4d86baf2b72c24db52a4",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "eric zakariasson",
+      "handle": "ericzakariasson",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/65f321be670b4ffba7f40d0afd38c94d",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Satya Nadella",
+      "handle": "satyanadella",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/baa68dbd9a9e461a96fd9b2e3f35dcbf",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Genspark",
+      "handle": "genspark_ai",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/71ffd342cb5d478185ef7d55bdfca011",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "orange.ai",
+      "handle": "oran_ge",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/0277b0bbefd54df7bc6b7880122da8f7",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Barsee ",
+      "handle": "heyBarsee",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/244eb9fa77ce4fa3b7fa5ceba80027a4",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Hunyuan",
+      "handle": "TXhunyuan",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/6e8e7b42cb434818810f87bcf77d86fb",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "NotebookLM",
+      "handle": "NotebookLM",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/221a88341acb475db221a12fed8208d0",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Google AI Developers",
+      "handle": "googleaidevs",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/69d925d4a8d44221b03eecbe07bd0f74",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Sundar Pichai",
+      "handle": "sundarpichai",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/8324d65a63dc42c584a8c08cc8323c9f",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Google Gemini App",
+      "handle": "GeminiApp",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/6fb337feeec44ca38b79491b971d868d",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Eric Jing",
+      "handle": "ericjing_ai",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/ddfdcdd4e390495c942f0b5da62af0fb",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Lenny Rachitsky",
+      "handle": "lennysan",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/77d5ce4736854b0ebae603e4b54d3095",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Jim Fan",
+      "handle": "DrJimFan",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/c6cfe7c0d6b74849997073233fdea840",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Notion",
+      "handle": "NotionHQ",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/f97a26863aec4425b021720d4f8e4ede",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Akshay Kothari",
+      "handle": "akothari",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/3434c0d56ee0446f991fb6af42bfac4b",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "AI Breakfast",
+      "handle": "AiBreakfast",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/0e3ebaf288014c45b0d24b71fe37312b",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "DeepSeek",
+      "handle": "deepseek_ai",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/68b610deb24b47ae9a236811563cda86",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "歸藏(guizang.ai)",
+      "handle": "op7418",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/831fac36aa0a49a9af79f35dc1c9b5d9",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Dia",
+      "handle": "diabrowser",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/6384ee3c656c48fea5e8b3cdacece4d0",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Skywork",
+      "handle": "Skywork_ai",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/6d7d398dd80b48d79669c92745d32cf6",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Naval",
+      "handle": "naval",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/b43bc203409e4c5a9c3ae86fe1ac00c9",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Aadit Sheth",
+      "handle": "aaditsh",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/179bcc4b8e5d4274b6e9e935f9fd4434",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "小互",
+      "handle": "imxiaohu",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/74e542992cf7441390c708f5601071d4",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "cat",
+      "handle": "_catwu",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/66a6b39ddcfa42e39621e0ab293c1bdd",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Augment Code",
+      "handle": "augmentcode",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/e153fdd077df458b8298d975c060dcc3",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "向阳乔木",
+      "handle": "vista8",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/9de19c78f7454ad08c956c1a00d237fe",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Fellou",
+      "handle": "FellouAI",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/326763c2f6154826babcfd71c5ab0f70",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Kling AI",
+      "handle": "Kling_ai",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/564237c3de274d58a04f064920817888",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Firecrawl",
+      "handle": "firecrawl_dev",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/c04abb206bbf4f91b22795024d6c0614",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Poe",
+      "handle": "poe_platform",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/17687b1051204b2dbaed4ea4c9178f28",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "lmarena.ai",
+      "handle": "lmarena_ai",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/f01b088d5a39473e854b07143df77ec5",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Replicate",
+      "handle": "replicate",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/12eba9c3db4940c5ab2a72bd00f9ff2c",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "a16z",
+      "handle": "a16z",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/f3fedf817599470dbf8d8d11f0872475",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Y Combinator",
+      "handle": "ycombinator",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/b1ab109f6afd42ab8ea32e17a19a3a3e",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Lilian Weng",
+      "handle": "lilianweng",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/a8f7e2238039461cbc8bf55f5f194498",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Paul Graham",
+      "handle": "paulg",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/900549ddadf04e839d3f7a17ebaba3fc",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/e8750659b8154dbfa0489f451e044af1",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "andrew chen",
+      "handle": "andrewchen",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/a3eb6beb2d894da3a9b7ab6d2e46790e",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Arthur Mensch",
+      "handle": "arthurmensch",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/d8121d969fb34c7daad2dd2aac4ba270",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Simon Willison",
+      "handle": "simonw",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/30ad80be93c84e44acc37d5ddf31db57",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Browser Use",
+      "handle": "browser_use",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/b8d7530f0b294405825013bbc1cc198f",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "AI Will",
+      "handle": "FinanceYF5",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/aa74321087f9405a872fd9a76b743bf8",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Ray Dalio",
+      "handle": "RayDalio",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/4838204097ed422eac24ad48e68dc3ff",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Sahil Lavingia",
+      "handle": "shl",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/baad3713defe4182844d2756b4c2c9ed",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "elvis",
+      "handle": "omarsar0",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/931d6e88e067496cac6bf23f69d60f33",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "The Rundown AI",
+      "handle": "TheRundownAI",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/83b1ea38940b4a1d81ea57d1ffb12ad7",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Nick St. Pierre",
+      "handle": "nickfloats",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/6ebdf0d91eef4c149acd0ef110635866",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Monica_IM",
+      "handle": "hey_im_monica",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/5d749cc613ec4069bb2a47334739e1b6",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Fireworks AI",
+      "handle": "FireworksAI_HQ",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/9f35c76341554bd78c2b9e63dc4fa5d8",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "meng shao",
+      "handle": "shao__meng",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/48aae530e0bf413aa7d44380f418e2e3",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Jan Leike",
+      "handle": "janleike",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/dceb5cd131b34c72a8376cba8ea5d864",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Richard Socher",
+      "handle": "RichardSocher",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/4d2d4165a7524217a08d3f57f27fa190",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Gary Marcus",
+      "handle": "GaryMarcus",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/35a38c5646d946fb894d8c30c1d9629e",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Adam D'Angelo",
+      "handle": "adamdangelo",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/3042b6f912b24f64982cc23f7bd59681",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Suhail",
+      "handle": "Suhail",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/c961547e08df4396b3ab69367a07a1cd",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "AI产品黄叔",
+      "handle": "PMbackttfuture",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/5b632b7fba274f62928cdcc9d3db4c5e",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "GitHub",
+      "handle": "github",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/fa5b15f68a2e4df1ab301e26a4ab9190",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "idoubi",
+      "handle": "idoubicc",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/3d72acd51d21414ea39871fc01982a65",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Claude",
+      "handle": "claudeai",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/01f60d63a61b44d692cc35c7feb0b4a4",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Martin Fowler",
+      "handle": "martinfowler",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/55d2d3f3eaaf4357b3230e0b01a464d7",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Viking",
+      "handle": "vikingmute",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/aab44cb2665a49258cd81f63b0b55192",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Geek",
+      "handle": "geekbb",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/9cb3b60e689e4445a7fbdfd0be144126",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Tw93",
+      "handle": "HiTw93",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/665fc88440fd4436acbc2e630d824926",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "Yangyi",
+      "handle": "Yangyixxxx",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/66c40de71a9842fda4853b7d9d1d20da",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    },
+    {
+      "name": "hidecloud",
+      "handle": "hidecloud",
+      "fetchMethod": "rss",
+      "rssUrl": "https://api.xgo.ing/rss/user/23d41992b29340788aa3d09d8364c5f5",
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev"
+    }
+  ]
+}

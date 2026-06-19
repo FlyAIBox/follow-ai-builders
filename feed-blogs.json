@@ -1,0 +1,9 @@
+{
+  "_comment": "中心生成的官方博客 feed。blogs 保存新文章全文；content 供 LLM 判断技术和产品信号；errors 记录索引或正文抓取问题。",
+  "generatedAt": "2026-06-03T08:04:07.654Z",
+  "lookbackHours": 72,
+  "blogs": [],
+  "stats": {
+    "blogPosts": 0
+  }
+}

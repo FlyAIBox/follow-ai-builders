@@ -1,0 +1,119 @@
+{
+  "_comment": "Follow Builders 默认信息源注册表（精选层）。JSON 不支持 // 注释，因此用 _comment、_notes、focus 等字段保存说明；抓取脚本只读取 podcasts、blogs、x_accounts 中的必要字段，额外说明字段不会影响运行。",
+  "_philosophy": {
+    "en": "Follow builders who ship products and share original opinions — not influencers who only repackage news.",
+    "zh": "追踪那些真正在做产品、有独立见解的建造者（Builders），而非只会搬运信息的网红（Influencers）。"
+  },
+  "_extended_catalog": {
+    "file": "config/bestblogs-sources.json",
+    "description_zh": "BestBlogs 扩展信息源目录（400 个），由 OPML 导入生成；与精选层并行，补充而非替代 default-sources。",
+    "description_en": "BestBlogs extended catalog (400 RSS sources) imported from OPML; runs in parallel with the curated layer — additive, not a replacement.",
+    "regenerate": "cd scripts && npm run import-bestblogs",
+    "config_docs": "config/README.md"
+  },
+  "_attribution_bestblogs": {
+    "attribution_zh": "信息源 OPML 来自 bestblogs.dev 的公开分享",
+    "attribution_en": "OPML subscriptions shared publicly by bestblogs.dev",
+    "website": "https://bestblogs.dev",
+    "repository": "https://github.com/ginobefun/BestBlogs",
+    "article": "https://www.ginonotes.com/posts/bestblogs-sources-part2-podcasts-videos",
+    "opml_dir": "config/bestblogs/opml/",
+    "opml_files": {
+      "all": "BestBlogs_RSS_ALL.opml",
+      "articles": "BestBlogs_RSS_Articles.opml",
+      "podcasts": "BestBlogs_RSS_Podcasts.opml",
+      "videos": "BestBlogs_RSS_Videos.opml",
+      "twitters": "BestBlogs_RSS_Twitters.opml"
+    },
+    "counts": { "all": 400, "articles": 170, "podcasts": 30, "videos": 40, "twitters": 160 }
+  },
+  "_quality_notes": [
+    "信息源优先选择一手建设者、官方团队、研究/产品负责人、Agent 工具链和推理/GPU/基础设施相关实践者。",
+    "focus 字段用于提示该来源的主要信号类型，后续 feed 会把它传给 LLM，帮助摘要层区分产品发布、Agent 工作流、模型能力、基础设施与市场观点。",
+    "新增来源时优先补充 name、handle/url/rssUrl 和 focus；不要把纯搬运、低原创或只做营销转发的账号放进默认列表。"
+  ],
+  "podcasts": [
+    {
+      "name": "Latent Space",
+      "rssUrl": "https://pod2txt.vercel.app/api/feed?url=https://api.substack.com/feed/podcast/1084089.rss",
+      "url": "https://www.youtube.com/@LatentSpacePod",
+      "focus": "AI 工程、模型发布、Agent 工具链、开发者生态的一手访谈。"
+    },
+    {
+      "name": "Training Data",
+      "rssUrl": "https://feeds.megaphone.fm/trainingdata",
+      "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
+      "focus": "AI 应用、企业落地、数据和产品战略。"
+    },
+    {
+      "name": "No Priors",
+      "rssUrl": "https://feeds.megaphone.fm/nopriors",
+      "url": "https://www.youtube.com/@NoPriorsPodcast",
+      "focus": "AI 创业、研究趋势、基础模型和产业格局。"
+    },
+    {
+      "name": "Unsupervised Learning",
+      "rssUrl": "https://feeds.simplecast.com/dOSE_bdP",
+      "url": "https://www.youtube.com/@RedpointAI",
+      "focus": "AI 投资、Agent 产品、基础设施公司和市场结构。"
+    },
+    {
+      "name": "The MAD Podcast with Matt Turck",
+      "rssUrl": "https://anchor.fm/s/f2ee4948/podcast/rss",
+      "url": "https://www.youtube.com/@DataDrivenNYC/videos",
+      "focus": "数据基础设施、AI 公司建设、企业软件和资本市场。"
+    },
+    {
+      "name": "AI & I by Every",
+      "rssUrl": "https://anchor.fm/s/ed1f5584/podcast/rss",
+      "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+      "focus": "AI 产品体验、创作者工作流、Agent 使用案例。"
+    }
+  ],
+  "blogs": [
+    {
+      "name": "Anthropic Engineering",
+      "type": "scrape",
+      "indexUrl": "https://www.anthropic.com/engineering",
+      "articleBaseUrl": "https://www.anthropic.com/engineering/",
+      "fetchMethod": "http",
+      "focus": "Anthropic 工程团队的技术复盘、模型系统、可靠性和 Agent 基础设施。"
+    },
+    {
+      "name": "Claude Blog",
+      "type": "scrape",
+      "indexUrl": "https://claude.com/blog",
+      "articleBaseUrl": "https://claude.com/blog/",
+      "fetchMethod": "http",
+      "focus": "Claude 产品发布、Codex/Agent 工作流、用户侧功能和官方更新。"
+    }
+  ],
+  "x_accounts": [
+    { "name": "Andrej Karpathy", "handle": "karpathy", "focus": "AI 教育、模型直觉、Agent 与软件工程长期判断。" },
+    { "name": "Swyx", "handle": "swyx", "focus": "AI 工程社区、Agent 开发者生态、模型与工具发布信号。" },
+    { "name": "Josh Woodward", "handle": "joshwoodward", "focus": "Google Gemini、AI Studio、消费级 AI 产品更新。" },
+    { "name": "Boris Cherny", "handle": "bcherny", "focus": "AI 编程工具、Agent 产品设计、开发者体验。" },
+    { "name": "Thibault Sottiaux", "handle": "thsottiaux", "focus": "Codex、ChatGPT、Agent 工作流和产品发布。" },
+    { "name": "Peter Yang", "handle": "petergyang", "focus": "AI 产品、创业策略、Agent 对 SaaS 和软件工作的影响。" },
+    { "name": "Nan Yu", "handle": "thenanyu", "focus": "AI 产品管理、模型应用、开发者工具观察。" },
+    { "name": "Madhu Guru", "handle": "realmadhuguru", "focus": "AI 应用构建、产品增长、开发者实践。" },
+    { "name": "Amanda Askell", "handle": "AmandaAskell", "focus": "AI 对齐、安全、模型行为和研究判断。" },
+    { "name": "Cat Wu", "handle": "_catwu", "focus": "OpenAI 研究/产品信号、模型能力与用户体验。" },
+    { "name": "Thariq", "handle": "trq212", "focus": "Claude Code、Agent 工作流、开发者自动化。" },
+    { "name": "Google Labs", "handle": "GoogleLabs", "focus": "Google AI 实验、Gemini 产品、前沿应用发布。" },
+    { "name": "Amjad Masad", "handle": "amasad", "focus": "Replit、AI 编程 Agent、软件生成和企业应用。" },
+    { "name": "Guillermo Rauch", "handle": "rauchg", "focus": "Vercel、前端基础设施、AI 应用部署和开发者平台。" },
+    { "name": "Alex Albert", "handle": "alexalbert__", "focus": "Claude、Agent 能力、模型产品发布和评测信号。" },
+    { "name": "Aaron Levie", "handle": "levie", "focus": "企业 AI、文档/内容工作流、SaaS 与市场判断。" },
+    { "name": "Ryo Lu", "handle": "ryolu_", "focus": "AI 设计工具、产品体验、创意工作流。" },
+    { "name": "Garry Tan", "handle": "garrytan", "focus": "AI 创业、YC 生态、市场和创始人信号。" },
+    { "name": "Matt Turck", "handle": "mattturck", "focus": "AI/data 基础设施、投资趋势、企业软件格局。" },
+    { "name": "Zara Zhang", "handle": "zarazhangrui", "focus": "AI 产品、Codex/skills、创作者和 Agent 使用场景。" },
+    { "name": "Nikunj Kothari", "handle": "nikunj", "focus": "AI 工程、模型系统、基础设施实践。" },
+    { "name": "Peter Steinberger", "handle": "steipete", "focus": "开发者工具、AI 编程、Apple 平台和工程实践。" },
+    { "name": "Dan Shipper", "handle": "danshipper", "focus": "AI 写作、产品使用案例、Every 生态和 Agent 工作流。" },
+    { "name": "Aditya Agarwal", "handle": "adityaag", "focus": "AI 公司建设、产品管理、工程组织和创业经验。" },
+    { "name": "Sam Altman", "handle": "sama", "focus": "OpenAI 战略、模型路线、AI 产业和政策信号。" },
+    { "name": "Claude", "handle": "claudeai", "focus": "Claude 官方产品发布、模型能力、Agent/Codex 相关更新。" }
+  ]
+}

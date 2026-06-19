@@ -1,0 +1,842 @@
+{
+  "_comment": "BestBlogs 扩展 feed。信息源来自 bestblogs.dev 公开 OPML；articles/podcasts/videos/x 为 72 小时内 RSS 新条目。",
+  "_attribution": {
+    "project": "BestBlogs",
+    "attribution_zh": "信息源 OPML 来自 bestblogs.dev 的公开分享",
+    "attribution_en": "OPML subscriptions shared publicly by bestblogs.dev",
+    "website": "https://bestblogs.dev",
+    "repository": "https://github.com/ginobefun/BestBlogs",
+    "article": "https://www.ginonotes.com/posts/bestblogs-sources-part2-podcasts-videos",
+    "philosophy_zh": "追踪那些真正在做产品、有独立见解的建造者（Builders），而非只会搬运信息的网红（Influencers）。",
+    "philosophy_en": "Follow builders who ship products and share original opinions — not influencers who only repackage news."
+  },
+  "generatedAt": "2026-06-10T03:50:41.540Z",
+  "lookbackHours": 72,
+  "articles": [
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "UX Magazine",
+      "title": "The New Makers",
+      "url": "https://uxmag.com/articles/the-new-makers",
+      "publishedAt": "2026-06-10T03:48:32.000Z",
+      "summary": "Freeze-dried backpacking food. A personal finance app. A photo booth. A community dinner for refugees. The perfect coffee mug. An app to teach kids about AI. An exhibit at the V&A Museum. All of these things were made by researchers. It’s never been easier for researchers to turn their ideas into products. Traditionally, we’ve been The post The New Makers appeared first on UX Magazine ."
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "The JetBrains Blog",
+      "title": "Agentic AI Governance: Designing for Accountability and Control",
+      "url": "https://blog.jetbrains.com/ai/2026/06/agentic-ai-governance-designing-for-accountability-and-control/",
+      "publishedAt": "2026-06-10T03:31:57.000Z",
+      "summary": "Many organizations are already deploying agentic workflows. Some are still experimental, while others are running in production. Once an AI agent can take action on behalf of a business, the question is no longer whether it’s useful, but what happens when something goes wrong. It’s tempting to focus on blame: the AI vendor, the manager, […]"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "爱范儿",
+      "title": "早报｜微信朋友圈搜索全面开放/Claude发布「Mythos级」模型/王传福：比亚迪5年后规模要做到全球第一",
+      "url": "https://www.ifanr.com/1668544?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=",
+      "publishedAt": "2026-06-10T01:24:21.000Z",
+      "summary": "· 苹果详解第三代基础模型，端侧 200 亿参数模型采用稀疏激活 · 微信 AI 生态开放接入，滴滴、美的等首批完成适配 · 国家安全部提示「AI 中转站」数据风险 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "SuperTechFans",
+      "title": "2026 06 10 HackerNews",
+      "url": "https://supertechfans.com/cn/post/2026-06-10-HackerNews/",
+      "publishedAt": "2026-06-10T00:57:53.000Z",
+      "summary": "2026-06-10 Hacker News Top Stories # Anthropic发布Fable 5和Mythos 5模型，前者安全但过度审查误伤正常内容，后者无安全限制但能力突出，二者价格大幅降低。 Marko Stanic使用1993年风格的软件渲染、256色调色板及光照技术制作第一人称射击游戏，引发对纯软件渲染与经典引擎的讨论。 苹果宣布基于Google Gemini模型构建新AI架构，整合隐私保护与多模态能力，引发对数据保护与隐私技术设计的争论。 Signal发布声明批评英国政府要求扫描设备内容、年龄验证和裸体审查的监控计划，指出其危害隐私且无效。 苹果升级Apple Intelligence和Siri AI，新增多模态与上下文能力，但评论区普遍认为AI应用场景贫乏且不可靠。 Music Decoy是一款零资源消耗的macOS工具，通过占用bundle identifier阻止Apple Music自动启动，方案精巧获赞。 微软开源工具遭供应链攻击，窃取AI开发者密码，引发对依赖安装安全性和AI加速风险的讨论。 文章指出AI如同快速轮换的摇滚明星开发者，加速产出难以维"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "Databricks",
+      "title": "Modern BSA/AML compliance on Databricks",
+      "url": "https://www.databricks.com/blog/modern-bsaaml-compliance-databricks",
+      "publishedAt": "2026-06-10T00:45:01.000Z",
+      "summary": "The anti-money laundering (AML) function in financial services has historically been..."
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "阿里云开发者",
+      "title": "知识库分层编排：从 RAG 到 Agent-native Knowledge Context Layer",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&amp;mid=2247560713&amp;idx=1&amp;sn=fd6b0f4e8ce2b3bd20da9e0189170023",
+      "publishedAt": "2026-06-10T00:30:00.000Z",
+      "summary": ""
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "大模型智能",
+      "title": "刚刚，Anthropic首个神话级Claude5正式解禁！",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&amp;mid=2247556529&amp;idx=1&amp;sn=f4e2cc76390a11bce0279bdfd02276b3",
+      "publishedAt": "2026-06-10T00:29:00.000Z",
+      "summary": "推荐"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "吴晓波频道",
+      "title": "世界杯魔咒来了？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3OTM5NTkxNA==&amp;mid=2653163766&amp;idx=1&amp;sn=91be1de5137224042dbae1ae9866e6f0",
+      "publishedAt": "2026-06-10T00:20:00.000Z",
+      "summary": "8届世界杯，A股“5跌3涨”"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "Spring Blog",
+      "title": "Spring for Apache Pulsar 1.2.18 and 2.0.6 are now available",
+      "url": "https://spring.io/blog/2026/06/10/spring-for-apache-pulsar-1-2-18-and-2-0-6-are-now-available",
+      "publishedAt": "2026-06-10T00:00:00.000Z",
+      "summary": "On behalf of the team and everyone who has contributed, I'm happy to announce that Spring for Apache Pulsar 1.2.18 and 2.0.6 have been released and are now available from Maven Central. Both releases are maintenance releases focused on dependency updates. The 2.0.6 release includes an upgrade to Apache Pulsar client 4.2.1 , along with updates to Jackson, logback, Caffeine, and Testcontainers. The 1.2.18 release brings Jackson and logback maintenance bumps for the 1.2.x line. The 1.2.18 release w"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "dbaplus社群",
+      "title": "30 年了！为什么 IPv6 依旧替代不了 IPv4 ？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&amp;mid=2247636573&amp;idx=1&amp;sn=bfe7aa2faa33bab3e01074e1ffbcaffa",
+      "publishedAt": "2026-06-09T23:15:00.000Z",
+      "summary": "答案可能比你想的更反常识。"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "量子位",
+      "title": "刚刚，Claude Mythos 5发布！5000万行代码1天搞定",
+      "url": "https://www.qbitai.com/2026/06/433590.html",
+      "publishedAt": "2026-06-09T22:52:37.000Z",
+      "summary": "一个更强的模型上桌了"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "The GitHub Blog",
+      "title": "From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI",
+      "url": "https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli/",
+      "publishedAt": "2026-06-09T16:00:00.000Z",
+      "summary": "Custom agents let GitHub Copilot CLI understand your stack and team workflows, turning one-off terminal prompts into repeatable, reviewable processes. The post From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI appeared first on The GitHub Blog ."
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "Google DeepMind Blog",
+      "title": "Fluid, natural voice translation with Gemini 3.5 Live Translate",
+      "url": "https://deepmind.google/blog/fluid-natural-voice-translation-with-gemini-35-live-translate/",
+      "publishedAt": "2026-06-09T15:16:25.000Z",
+      "summary": "Gemini 3.5 Live Translate brings near real-time, natural speech translation to Google AI Studio, Google Translate and Google Meet."
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "ByteByteGo Newsletter",
+      "title": "What Salesforce Learned from 20,000 Enterprise Agent Deployments",
+      "url": "https://blog.bytebytego.com/p/what-salesforce-learned-from-20000",
+      "publishedAt": "2026-06-09T15:07:59.000Z",
+      "summary": "We sat down with John Kucera, Salesforce’s CPO of Agentforce, to learn what separates agents that deliver real business value from those that stall after a good demo."
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "Datawhale",
+      "title": "AI入门大科普！开源入门知识点扫盲",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&amp;mid=2247723352&amp;idx=1&amp;sn=0a3e256ee9125f0b6525c8f61a1ba40e",
+      "publishedAt": "2026-06-09T14:41:00.000Z",
+      "summary": ""
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "超人的电话亭",
+      "title": "AI生成UI的切入点和工具介绍",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI0Njc5NzM5OQ==&amp;mid=2247506927&amp;idx=1&amp;sn=3323e874d995fb794fea19a93238a411",
+      "publishedAt": "2026-06-09T14:34:00.000Z",
+      "summary": ""
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "笔记侠",
+      "title": "哈萨比斯最新震撼预言：留给旧世界的时间，不到2000天",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&amp;mid=2654905726&amp;idx=1&amp;sn=8ef3a5b87af8e44da05bc8c71e66d49f",
+      "publishedAt": "2026-06-09T13:50:00.000Z",
+      "summary": "留给人类的时间，可能不多了。"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "白鲸出海",
+      "title": "在美递交IPO申请，「App工厂」估值200亿美元？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzYzNTkyMTI2Ng==&amp;mid=2247573815&amp;idx=1&amp;sn=8b757d42f20521ccf50842faf4cbe96d",
+      "publishedAt": "2026-06-09T13:30:00.000Z",
+      "summary": "一套打法玩10年？"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "L先生说",
+      "title": "聊一个有趣的现象：认知过载",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzAxNTY0NjEzNg==&amp;mid=2247488814&amp;idx=1&amp;sn=94f073ac5a8c3a64a6963703d928cbc0",
+      "publishedAt": "2026-06-09T13:30:00.000Z",
+      "summary": ""
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "晚点LatePost",
+      "title": "瑞幸咖啡的茶饮卖了 200 亿，现制饮品边界开始消失",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&amp;mid=2247536491&amp;idx=1&amp;sn=2bb40ccd752a973e6c756b9e03f990ab",
+      "publishedAt": "2026-06-09T12:49:00.000Z",
+      "summary": "瑞幸不再只是一家咖啡品牌。"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "OpenAI Blog",
+      "title": "How engineers at Nextdoor use Codex to build without limits",
+      "url": "https://openai.com/index/nextdoor",
+      "publishedAt": "2026-06-09T12:00:00.000Z",
+      "summary": "How engineers at Nextdoor use Codex with GPT-5.5 to investigate hard-to-reproduce issues, build across platforms, and focus on product outcomes."
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "乌鸦智能说",
+      "title": "两位经济学家的AGI终极推演：当一切都不再稀缺，人类还剩什么？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&amp;mid=2247493832&amp;idx=1&amp;sn=dddbb975d1cb16c5814b0a443c7f0586",
+      "publishedAt": "2026-06-09T11:00:00.000Z",
+      "summary": "机器接管生产，人类退回情感"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "极客公园",
+      "title": "没有星图和蒲公英的海外市场，品牌的百亿预算怎么花？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&amp;mid=2653108450&amp;idx=1&amp;sn=0705bf6dcb2c02b61eb39ffbc7462289",
+      "publishedAt": "2026-06-09T10:28:00.000Z",
+      "summary": "​海外营销这门生意，也许等来了它的「AI版滴滴」。"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "创业邦",
+      "title": "融了500亿，梁文锋开始大搞基建了",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&amp;mid=2650878275&amp;idx=1&amp;sn=01f40cb5cfb9d67cf5e251945cc6fafb",
+      "publishedAt": "2026-06-09T10:22:00.000Z",
+      "summary": "token的需求量不可估量"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "谷歌开发者",
+      "title": "社区说｜Google I/O 2026 落地指南: 全栈智能体、Android 变革与 AI 原生开发流",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&amp;mid=2652162169&amp;idx=1&amp;sn=2a418b59a97edf379cabd182d988cf7d",
+      "publishedAt": "2026-06-09T10:15:00.000Z",
+      "summary": "本期 \"社区说\" 聚焦 Google I/O 2026，深度拆解全栈智能体架构、Android 最新演进与 AI 原生原型开发。"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "百度AI",
+      "title": "100年后，你的专业还在吗？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI5NzUyMzM1Mg==&amp;mid=2247668834&amp;idx=1&amp;sn=faf9715f10f7b5b97178bd531650dc37",
+      "publishedAt": "2026-06-09T10:08:00.000Z",
+      "summary": ""
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "AI科技评论",
+      "title": "国内首个！具身数采「黑箱」正式开源，具身数据昂贵的时代结束了",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&amp;mid=2247736311&amp;idx=1&amp;sn=565dcf1625c83eab65395df31ecd0fb1",
+      "publishedAt": "2026-06-09T10:00:00.000Z",
+      "summary": "自变量开源XRZero-G0，数采成本直降到1/20。"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "腾讯技术工程",
+      "title": "高考那几天，鹅厂员工遇到过什么至今难忘的事？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&amp;mid=2649801918&amp;idx=1&amp;sn=02b1729b29e056bca66a3861ca724a34",
+      "publishedAt": "2026-06-09T09:41:00.000Z",
+      "summary": "评论区一起来聊！"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "赛博禅心",
+      "title": "瑞幸CLI 上线",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&amp;mid=2247517738&amp;idx=1&amp;sn=c55d1c84443422ca57a90aa787556453",
+      "publishedAt": "2026-06-09T09:36:00.000Z",
+      "summary": "限量开放：&#xA;https://open.lkcoffee.com/cli&#xA;&#xA;Mac 调用：&#xA;curl -fsSL https://open.lkcoffee.com/install | bash&#xA;&#xA;Win 调用：&#xA;irm https://open.lkcoffee.com/window/install | iex"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "article",
+      "name": "魔搭ModelScope社区",
+      "title": "Macaron-V1-Preview开源：749B Mixture-of-LoRA 架构，四项 Agent 基准全部超越 GPT 5.4、Claude Opus 4.6",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&amp;mid=2247509046&amp;idx=1&amp;sn=bfd40063324ad69c08f873fda835d4c6",
+      "publishedAt": "2026-06-09T09:33:00.000Z",
+      "summary": "Mind Lab 开源了基于 GLM5.1 后训练的 749B 参数智能体模型 Macaron-V1-Preview，创新采用 Mixture-of-LoRA 架构实现了多任务能力的模块化与高效切换。该模型在多项智能体基准测试中表现优异，成功超越了 GPT 5.4 和 Claude Opus 4.6 等主流闭源模型。"
+    }
+  ],
+  "podcasts": [
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "podcast",
+      "name": "跨国串门儿计划",
+      "title": "#578.女性如何稳住更年期健康，在医学误解与激素争议中夺回主动权",
+      "url": "https://www.xiaoyuzhoufm.com/episode/6a28551f623ad1bf9b345256",
+      "publishedAt": "2026-06-09T23:00:00.000Z",
+      "summary": "📝 本期播客简介 本期我们克隆了：《Huberman Lab Podcast》【 Andrew Huberman: How to Navigate Menopause &amp; Perimenopause for Maximum Health &amp; Vitality | Dr. Mary Claire Haver 】 原内容更新时间：2024-06-03 本期节目是一次关于围绝经期、绝经期与女性长期健康的系统梳理。主持人 Andrew Huberman 邀请妇产科医生、女性健康专家 Mary Claire Haver，从卵巢功能衰退、雌激素波动、心理健康变化、睡眠问题、潮热、内脏脂肪、肌肉流失、骨密度，到激素替代治疗 HRT 的争议与误解，几乎完整拆解了女性从三四十岁开始就应该了解的一套健康地图。 Haver 医生最核心的观点是：更年期不应该只被理解成“月经停止”或“潮热”，它是影响大脑、心脏、骨骼、肌肉、皮肤、泌尿生殖系统和代谢健康的全身性转变。她也指出，围绝经期往往在最后一次月经前 7-10 年就开始，很多女性在出现焦虑、脑雾、睡眠中断、心悸、关节痛和月经混乱时，并不知道"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "podcast",
+      "name": "硬地骇客",
+      "title": "EP127 从 Skills 到自动化工作流，论 Agent 如何接管真实生产力 ⚙️",
+      "url": "https://www.xiaoyuzhoufm.com/episode/6a281b8434bdac55b506eb7b",
+      "publishedAt": "2026-06-09T14:02:10.000Z",
+      "summary": "从 Claude Code、Codex 到 OpenClaw，哪些 Skills 真正改变了工作流？为什么越来越多人开始不看代码，只看结果？GrillMe、TDD、Playwright、Computer Use 等热门 Skills 到底解决了什么问题？以及在 Coding 之外，知识管理、投资研究、邮件处理等场景里，Skills 又能带来哪些意想不到的价值。 如果你正在思考如何让 Agent 真正成为自己的数字分身，这期节目或许会给你不少启发。 本shownotes由 castwise.ai 制作 Podwise - Podcast Knowledge at 10x Speed! podwise.ai Apple Store 下载👉🏻 apps.apple.com 硬地笔记 00:49 AI Skills 的筛选标准与应用场景 06:36 前端设计与需求澄清的 AI 辅助工具 14:34 Agent 驱动的开发工作流与架构设计 27:54 知识管理与日常事务的自动化实践 34:33 AI 时代对失控感的心理适应与信任重构 43:31 自定义 Skill 的开发与自动化沉淀 欢迎关"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "podcast",
+      "name": "枫言枫语",
+      "title": "Vol. 168 WWDC26: Siri AI及格了吗？",
+      "url": "https://www.xiaoyuzhoufm.com/episode/6a2867b397e115babe651db7",
+      "publishedAt": "2026-06-09T11:08:55.000Z",
+      "summary": "WWDC26 已于北京时间 6 月 9 日凌晨 1 点顺利开幕，今年自力是去到了WWDC现场，给我们带来了Tim Cook在苹果担任CEO的最后一届WWDC的现场报道。 今年的发布会内容跟往届比起来显得不太“丰富”，一半是在讲重头戏Siri AI，那么这个迟到了几年的作业，及格了吗？让我们一起在节目里聊聊吧。 相关信息 主播: 枫影 Justin Yan 主播: 自力 hzlzh 联系我们 微信听友群：加 fyfyFM 进群 听众反馈: hi@fyfy.fm 节目收听方式 推荐使用苹果Podcast, 小宇宙等播客客户端搜索 “枫言枫语” 来订阅收听本节目。 小宇宙 - 枫言枫语 直接订阅 Feed URL Apple iTunes Podcast - 枫言枫语"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "podcast",
+      "name": "AI炼金术",
+      "title": "用 AI 做会议纪要，是 AI 转型中最荒谬的事儿",
+      "url": "https://www.xiaoyuzhoufm.com/episode/6a26b614a1049eb63a9b23e2",
+      "publishedAt": "2026-06-08T12:29:00.000Z",
+      "summary": "「 不是每个人拿到了一份用 AI 做的会议纪要，这就叫 AI 化了。整个组织共享了一个被持续维护的事实库，不需要人类去看单独的会议纪要，这才是 AI 化。 」 这是这一期单口的题眼。 —— 你全公司都在用 AI 写会议纪要、写代码、做 PPT，每个人都快了好几倍——可一年下来，组织整体好像没提效。 任鑫这期给了一个扎心的判断： 用 AI 做会议纪要，本身就是一件很荒谬的事 。它只是把「抄写员」变快了，而组织真正的卡点从来不在任务层，在部门与部门之间的协调层。 为了把这件事讲透，他翻出一段波音造飞机的历史段子：1985 年的波音工程师明明用上了 CAD，却把图纸打印出来开会，结果一扇舱门改了上万次。 今天的会议室，其实还很像那个工程间。 亮点 「 用 AI 做会议纪要，就像把 CAD 图打印出来开会 」 任鑫开篇就抛了个荒诞的画面：设计师用 CAD 把桌子椅子杯子设计好了，不把电子文档发给你，而是打印成一张纸，开个会用嘴跟你讲「你看这杯子好不好」，你说好，就拿着这张纸回去照着上生产线。「你会不会觉得这人神经病？」在别的领域我们一眼看出荒谬，可换成会议纪要就习以为常了——我们讨论的本该是「"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "podcast",
+      "name": "人民公园说AI",
+      "title": "AI赌球能暴富吗？世界杯有没有假球？博彩行业如何运作？｜20年博彩老炮讲透行业真相",
+      "url": "https://www.xiaoyuzhoufm.com/episode/6a26953e7444b57222356714",
+      "publishedAt": "2026-06-08T10:46:18.000Z",
+      "summary": "世界杯到底有没有黑幕假球？我们和在博彩行业摸爬滚打20年的闲哥，直接扒了扒这届“AI含量最高”的世界杯背后的黑幕与算法对抗。闲哥无情泼冷水：别幻想靠AI模型在世界杯上套利发财，自以为能战胜庄家的聪明人，最后的终局大多是去送外卖了。当AI 2.0彻底打破了技术壁垒，我能靠AI中大奖吗？ 郑重声明：本内容仅作为科普交流，请大家文明看球，拒绝一切形式的赌球！ 00:00 世界杯到底有没有假球？ 05:28 菠菜行业是怎么运作的？ 10:22 为什么世界杯是庄家“烦人的双11”？ 13:30 体育+量化：一条比你想象中更暴利的暗黑产业链 14:42 自以为能靠多平台套利的人大多去送外卖了 17:55 从“人肉手柄速记”到智能摄像头，体育数据第一桶金卖给谁了？ 21:00 生成式AI爆火，而足球早就被AI量化了几十遍 23:52 大庄家是怎么用模型洗劫小庄家的？ 26:00 别和庄家模型对赌：玩死你的从来不是算法，而是贪婪 26:07 看球，最重要是开心！ 【订阅 JustSayAI 早晚报】 🌈 新朋友！订阅「 JustSayAI 早晚报 」· 每日两封 · 一键听报 🌟 老朋友！ 加入会"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "podcast",
+      "name": "开始连接LinkStart",
+      "title": "Vol.121｜硅谷AI大转弯，软件正在死去，创业者的真机会在哪里？｜2026年中特辑",
+      "url": "https://www.xiaoyuzhoufm.com/episode/6a265d55b30e1571aea280f5",
+      "publishedAt": "2026-06-08T06:34:38.000Z",
+      "summary": "【本期内容】 本期节目，我们邀请到了国内出手 AI 最活跃的基金之一——锦秋基金的两位合伙人臧天宇和郑晓超，一起深度复盘 2026 年上半年的模型、应用、具身行业。当底层模型的边界还在野蛮生长，整个行业正迎来估值跳涨与价值重估并存的拐点之年。我们不打算做宏大空泛的行业地图，只想为准备下场或正在路上的创业者，做一份最务实的「决策指南」。 我们将用最真实的视角，帮你把那些最纠结的抉择一次性聊透：D1 创业到底选中国还是美国，怎么判断？在 AI 行业的热潮里，哪些是真趋势，哪些只是泡沫？ 面对大厂的底层挤压，哪些方向是留给创业者的真机会，哪些看起来热火朝天、但其实早就是大厂的终极战场？当底层模型不断吞噬应用，垂类 AI 应用的活路到底在哪里？ 希望这场长达近两小时的深度复盘，能帮你重新校准未来的方向。欢迎收听～ 【嘉宾】 郑玄｜极客公园副主编、「开始连接 LinkStart」主播 臧天宇｜锦秋基金合伙人 郑晓超丨锦秋基金合伙人 【精彩时刻】 04:20 一个词总结 2026 年上半年 AI 行业：重估、世界模型 06:04 锦秋基金名字的故事是什么？怎么看「字节系基金」这个标签？ 10:12"
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "category": "podcast",
+      "name": "张小珺Jùn｜商业访谈录",
+      "title": "144. 对阳萌的4小时访谈：消费电子死与生、第三类公司、AI变量、产品方法、打游戏的模式选择",
+      "url": "https://www.xiaoyuzhoufm.com/episode/6a2543dcb30e1571aea20d0b",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "summary": "前面几集节目，我和大家一起遇见了许多年轻的面孔——他们是AI时代原生的创业者和技术领袖。但是AI对社会的渗透是全方位的，不止于新技术与新产品。 今天我们的嘉宾是安克创新的创始人兼CEO阳萌。他是1982年生人，2011年开始创业，如今掌舵一家市值超过600亿人民币的科技企业。 面对新的范式变化，阳萌会怎么做？尤其在消费电子这个无限战争、速生速死的赛场之上。 他有很多对产品与组织方法论的思考。 接下来，就是我对阳萌的访谈。 OUTLINE: 00:01:13 不叛逆中的叛逆 00:14:34 这世界特别公平 00:31:13 打游戏，我开始选了easy模式 01:02:27 现在我想去打hard难度 01:48:29 我不是集权的人 02:04:17 高利润的公司要融资和IPO么？ 02:14:34 消费电子的死与生 02:28:59 AI的组织革命 02:58:42 你永远还是要相信人性 LINKS： 我们的播客在 小宇宙 、 Apple Podcast 、Spotify等全音频平台播出； 我们的视频播客在 Bilibili 、 小红书 、视频号、抖音等全视频平台播出； 如果你想服用文"
+    }
+  ],
+  "videos": [],
+  "x": [
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Lovable",
+      "handle": "lovable_dev",
+      "tweets": [
+        {
+          "text": "Lovable now supports Claude Fable 5.",
+          "url": "https://x.com/Lovable/status/2064395808913383556",
+          "publishedAt": "2026-06-09T17:14:50.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Microsoft Research",
+      "handle": "MSFTResearch",
+      "tweets": [
+        {
+          "text": "New research in Nature Methods from Project Ex Vivo shows AI models learn more from diverse cell sta...",
+          "url": "https://x.com/MSFTResearch/status/2064384745195118817",
+          "publishedAt": "2026-06-09T16:30:52.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Anthropic",
+      "handle": "AnthropicAI",
+      "tweets": [
+        {
+          "text": "New Science Blog: Why has AI advanced faster in coding than in biology? To agents, bio databases a...",
+          "url": "https://x.com/AnthropicAI/status/2064054837294354677",
+          "publishedAt": "2026-06-08T18:39:56.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "OpenAI Developers",
+      "handle": "OpenAIDevs",
+      "tweets": [
+        {
+          "text": "https://t.co/CwSbd8f4gl",
+          "url": "https://x.com/OpenAIDevs/status/2064395168007278714",
+          "publishedAt": "2026-06-09T17:12:17.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "ChatGPT",
+      "handle": "ChatGPTapp",
+      "tweets": [
+        {
+          "text": "Turn data and comparisons into charts, directly in ChatGPT. Available now on mobile and web.",
+          "url": "https://x.com/ChatGPTapp/status/2064018770839113769",
+          "publishedAt": "2026-06-08T16:16:37.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Google AI",
+      "handle": "GoogleAI",
+      "tweets": [
+        {
+          "text": "Today, we released Gemini 3.5 Live Translate, our latest audio model for live speech-to-speech trans...",
+          "url": "https://x.com/GoogleAI/status/2064366504112505266",
+          "publishedAt": "2026-06-09T15:18:23.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Replit ⠕",
+      "handle": "Replit",
+      "tweets": [
+        {
+          "text": "I built a mobile app, promo video, and pitch deck for my travel app at the same time using Replit's ...",
+          "url": "https://x.com/Replit/status/2064407281278607791",
+          "publishedAt": "2026-06-09T18:00:25.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Sam Altman",
+      "handle": "sama",
+      "tweets": [
+        {
+          "text": "Here is our current plan for OpenAI: https://t.co/r29FUUee3A",
+          "url": "https://x.com/sama/status/2064088940932641225",
+          "publishedAt": "2026-06-08T20:55:27.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Andrej Karpathy",
+      "handle": "karpathy",
+      "tweets": [
+        {
+          "text": "This is a super exciting release - Claude Fable 5 is the same underlying model as Mythos but with ad...",
+          "url": "https://x.com/karpathy/status/2064409694761054332",
+          "publishedAt": "2026-06-09T18:10:00.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Mike Krieger",
+      "handle": "mikeyk",
+      "tweets": [
+        {
+          "text": "It's state of the art on nearly every benchmark we tested and the lead grows the longer the task. Ma...",
+          "url": "https://x.com/mikeyk/status/2064392996288901392",
+          "publishedAt": "2026-06-09T17:03:39.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Anton Osika – eu/acc",
+      "handle": "antonosika",
+      "tweets": [
+        {
+          "text": "Read the report: https://t.co/6kkW0KBJtJ",
+          "url": "https://x.com/antonosika/status/2064331963608289503",
+          "publishedAt": "2026-06-09T13:01:08.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Fei-Fei Li",
+      "handle": "drfeifei",
+      "tweets": [
+        {
+          "text": "The creativity and imagination is out of the world! So grateful that @theworldlabs got to partner w...",
+          "url": "https://x.com/drfeifei/status/2064387365930676695",
+          "publishedAt": "2026-06-09T16:41:17.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Alex Albert",
+      "handle": "alexalbert__",
+      "tweets": [
+        {
+          "text": "We've reset usage limits across our products! For those just starting to test Fable, here's four t...",
+          "url": "https://x.com/alexalbert__/status/2064467657483829441",
+          "publishedAt": "2026-06-09T22:00:20.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Greg Brockman",
+      "handle": "gdb",
+      "tweets": [
+        {
+          "text": "Cool to see University of North Dakota (where I took a number of classes growing up) innovating and ...",
+          "url": "https://x.com/gdb/status/2064469421490659751",
+          "publishedAt": "2026-06-09T22:07:20.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Amjad Masad",
+      "handle": "amasad",
+      "tweets": [
+        {
+          "text": "Try Claude Mythos at 25% off on Replit.",
+          "url": "https://x.com/amasad/status/2064411791015432466",
+          "publishedAt": "2026-06-09T18:18:20.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Marc Andreessen ",
+      "handle": "pmarca",
+      "tweets": [
+        {
+          "text": "Interesting.",
+          "url": "https://x.com/pmarca/status/2064531462825660863",
+          "publishedAt": "2026-06-10T02:13:52.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "NVIDIA AI",
+      "handle": "NVIDIAAI",
+      "tweets": [
+        {
+          "text": "&#x1f440;@llm_wizard @akashlives @gayanlol @JeremyK_TO @lironkatsif_ @ANonABento @ben_petlach",
+          "url": "https://x.com/NVIDIAAI/status/2064470795917889556",
+          "publishedAt": "2026-06-09T22:12:48.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Logan Kilpatrick",
+      "handle": "OfficialLoganK",
+      "tweets": [
+        {
+          "text": "congrats to the Anthropic team on Fable!!",
+          "url": "https://x.com/OfficialLoganK/status/2064506797051015411",
+          "publishedAt": "2026-06-10T00:35:51.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Rowan Cheung",
+      "handle": "rowancheung",
+      "tweets": [
+        {
+          "text": "It's a huge honor to translate the fastest-moving industry of our time for millions of people every ...",
+          "url": "https://x.com/rowancheung/status/2064334378797330818",
+          "publishedAt": "2026-06-09T13:10:44.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Google DeepMind",
+      "handle": "GoogleDeepMind",
+      "tweets": [
+        {
+          "text": "3.5 Live Translate can convert speech into over 70 languages and processes it as it’s streamed - whi...",
+          "url": "https://x.com/GoogleDeepMind/status/2064366509216928102",
+          "publishedAt": "2026-06-09T15:18:24.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "李继刚",
+      "handle": "lijigang_com",
+      "tweets": [
+        {
+          "text": "人在寻找一种结构，这种结构的边界足够确定（秩序感），内部足够不确定（新奇感）。",
+          "url": "https://x.com/lijigang/status/2064509071760502786",
+          "publishedAt": "2026-06-10T00:44:54.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "bolt.new",
+      "handle": "boltdotnew",
+      "tweets": [
+        {
+          "text": "Every Bolt Pro user now gets a free domain. Launch your business, start a side hustle, or ship that...",
+          "url": "https://x.com/boltdotnew/status/2064445738327687247",
+          "publishedAt": "2026-06-09T20:33:14.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Mustafa Suleyman",
+      "handle": "mustafasuleyman",
+      "tweets": [
+        {
+          "text": "Agreed. We have to be very careful about this. I published an article in @Nature recently making sim...",
+          "url": "https://x.com/mustafasuleyman/status/2064053516306718966",
+          "publishedAt": "2026-06-08T18:34:41.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "clem 珞",
+      "handle": "ClementDelangue",
+      "tweets": [
+        {
+          "text": "Concentration of power, capabilities and economic wealth is the biggest risk in AI. We need open sci...",
+          "url": "https://x.com/ClementDelangue/status/2064513229099876663",
+          "publishedAt": "2026-06-10T01:01:25.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Thomas Wolf",
+      "handle": "Thom_Wolf",
+      "tweets": [
+        {
+          "text": "4/ Why three metrics? The metrics are designed to capture different classes of errors. Shape simil...",
+          "url": "https://x.com/Thom_Wolf/status/2064030003843534993",
+          "publishedAt": "2026-06-08T17:01:15.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Junyang Lin",
+      "handle": "JustinLin610",
+      "tweets": [
+        {
+          "text": "ai making ai better recursively is an impressive idea but sometimes depressing as human researchers ...",
+          "url": "https://x.com/JustinLin610/status/2063518903930880132",
+          "publishedAt": "2026-06-07T07:10:19.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Runway",
+      "handle": "runwayml",
+      "tweets": [
+        {
+          "text": "Easily reformat your videos to different aspect ratios, so you can show up everywhere that matters. ...",
+          "url": "https://x.com/runwayml/status/2064350871048077756",
+          "publishedAt": "2026-06-09T14:16:16.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Justin Welsh",
+      "handle": "thejustinwelsh",
+      "tweets": [
+        {
+          "text": "Get my free 30-page guide on the 7 capacities that built my $15M one-person business. Each one come...",
+          "url": "https://x.com/thejustinwelsh/status/2064467680560615676",
+          "publishedAt": "2026-06-09T22:00:25.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Weaviate • vector database",
+      "handle": "weaviate_io",
+      "tweets": [
+        {
+          "text": "We keep blaming the model for problems caused by bad memory systems. Shoving more chat history into...",
+          "url": "https://x.com/weaviate_io/status/2064340749529817211",
+          "publishedAt": "2026-06-09T13:36:02.000Z"
+        }
+      ]
+    },
+    {
+      "source": "bestblogs",
+      "attribution": "bestblogs.dev",
+      "name": "Qdrant",
+      "handle": "qdrant_engine",
+      "tweets": [
+        {
+          "text": "What if your photo gallery could do more than just store images? This project by Vatsala Singh turn...",
+          "url": "https://x.com/qdrant_engine/status/2064331681377776104",
+          "publishedAt": "2026-06-09T13:00:00.000Z"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "articles": 30,
+    "podcasts": 7,
+    "videos": 0,
+    "xAccounts": 30,
+    "totalTweets": 30,
+    "total": 67
+  },
+  "errors": [
+    "Article Grafana Labs: HTTP 404",
+    "Article Google Cloud Blog: fetch failed",
+    "Article AWS Machine Learning Blog: fetch failed",
+    "Article Hugging Face Blog: fetch failed",
+    "Article Elastic Blog: fetch failed",
+    "Article Martin Fowler: This operation was aborted",
+    "Article Docker: fetch failed",
+    "Article InfoQ: HTTP 405",
+    "Article Google Developers Blog: fetch failed",
+    "Article 阮一峰的网络日志: fetch failed",
+    "Article AWS Architecture Blog: This operation was aborted",
+    "Article Smashing Magazine: This operation was aborted",
+    "Article The IntelliJ IDEA Blog: This operation was aborted",
+    "Article MongoDB Blog: This operation was aborted",
+    "Article ShowMeAI研究中心: HTTP 500",
+    "Article Vercel News: This operation was aborted",
+    "Article Hugging Face: HTTP 500",
+    "Article 开源服务指南: HTTP 500",
+    "Article LlamaIndex Blog: HTTP 404",
+    "Article The Keyword (blog.google) : This operation was aborted",
+    "Article Qdrant: This operation was aborted",
+    "Article Thoughtworks洞见: HTTP 500",
+    "Article 青哥谈AI: HTTP 500",
+    "Article AI Musings by Mu: fetch failed",
+    "Article yikai 的摸鱼笔记: HTTP 500",
+    "Article Elevate: fetch failed",
+    "Article AI at Meta Blog: fetch failed",
+    "Video AICodeKing: fetch failed",
+    "Video Matt Wolfe: fetch failed",
+    "Video AI Master: fetch failed",
+    "Video The Diary Of A CEO Clips: fetch failed",
+    "Video a16z: fetch failed",
+    "Video Hung-yi Lee: fetch failed",
+    "Video Lex Fridman: fetch failed",
+    "Video Dwarkesh Patel: fetch failed",
+    "Video Spring I/O: fetch failed",
+    "Video Fireship: fetch failed",
+    "Video Stripe: fetch failed",
+    "Video Sequoia Capital: fetch failed",
+    "Video Lenny's Podcast: fetch failed",
+    "Video Y Combinator: fetch failed",
+    "Video leerob: fetch failed",
+    "Video Google DeepMind: fetch failed",
+    "Video OpenAI: fetch failed",
+    "Video No Priors: fetch failed",
+    "Video AI Engineer: fetch failed",
+    "Video Anthropic: fetch failed",
+    "Video Liam Ottley: fetch failed",
+    "Video Siraj Raval: fetch failed",
+    "Video LangChain: fetch failed"
+  ]
+}
