@@ -62,7 +62,7 @@ Output structure:
 }
 ```
 
-The extended catalog is a **reference pool** for discovery and feed expansion. It runs **in parallel** with the curated layer in `default-sources.json` — daily digests include **both** when content is available.
+The extended layer is wired into the digest via `feed-bestblogs.json` and runs **in parallel** with the curated layer in `default-sources.json` — daily digests include **both** when content is available (curated depth + BestBlogs breadth).
 
 | Layer | Feed files | Content |
 |-------|------------|---------|
@@ -83,6 +83,6 @@ Describes fields in `~/.follow-builders/config.json` (language, timezone, delive
 |------|--------|
 | Refresh BestBlogs OPML | Replace files under `bestblogs/opml/`, run `npm run import-bestblogs` |
 | Change default digest sources | Edit `default-sources.json` (maintainer) |
-| Suggest a new builder | Open a [GitHub Issue](https://github.com/FlyAIBox/follow-builders/issues) |
+| Suggest a new builder | Open a [GitHub Issue](https://github.com/FlyAIBox/follow-ai-builders/issues) |
 
 When adding curated sources, prefer first-hand builders, official teams, and agent/GPU/infra practitioners — avoid repost-only or low-signal accounts.

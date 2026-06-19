@@ -13,6 +13,11 @@
 - [各 mode 产出对照表](#各-mode-产出对照表)
 - [提交产物说明](#提交产物说明)
 - [所需 Secrets](#所需-secrets)
+  - [谁需要配置](#谁需要配置)
+  - [在 GitHub 中设置](#在-github-中设置)
+  - [获取 X_BEARER_TOKEN](#获取-x_bearer_token)
+  - [获取 POD2TXT_API_KEY](#获取-pod2txt_api_key)
+  - [各 mode 与 Secret 对照](#各-mode-与-secret-对照)
 - [相关脚本](#相关脚本)
 - [与用户 skill 的关系](#与用户-skill-的关系)
 - [自行维护 feed（Fork 指南）](#自行维护-feedfork-指南)
@@ -155,14 +160,126 @@ fi
 
 ## 所需 Secrets
 
-在仓库 **Settings → Secrets and variables → Actions** 中配置：
+### 谁需要配置
 
-| Secret | 使用者 | 用途 |
-|--------|--------|------|
-| `X_BEARER_TOKEN` | `generate-feed.js`（tweets 分支） | 调用 X API v2 抓取推文 |
-| `POD2TXT_API_KEY` | `generate-feed.js`（podcasts 分支） | 播客 RSS 音频转录为文本 |
+| 角色 | 是否需要配置 Secret |
+|------|---------------------|
+| 普通用户（只用 `/ai` skill） | **否** — 默认从上游 `FlyAIBox/follow-builders` 拉取已发布的 `feed-*.json` |
+| Fork 仓库并自行跑 `generate-feed.yml` | **是** — 需在本仓库配置下表中的 Secret |
 
-缺少对应 secret 时，`generate-feed.js` 会在需要该 key 的分支上直接退出并报错。
+### 在 GitHub 中设置
+
+1. 打开你的仓库（例如 `https://github.com/你的用户名/follow-ai-builders`）
+2. 进入 **Settings → Secrets and variables → Actions**
+3. 点击 **New repository secret**，分别添加：
+
+| Name | Value |
+|------|-------|
+| `X_BEARER_TOKEN` | X API Bearer Token |
+| `POD2TXT_API_KEY` | pod2txt API Key |
+
+workflow 会通过 `${{ secrets.XXX }}` 注入为环境变量（见 `.github/workflows/generate-feed.yml`）。
+
+配置完成后，到 **Actions → Generate Feeds → Run workflow** 手动触发一次，验证流水线是否正常。
+
+### 获取 X_BEARER_TOKEN
+
+来自 [X Developer Console](https://console.x.com/)（新版 **Pay Per Use** 模式）：
+
+> **注意：** 2026 年起 X API 已改为按量付费（Pay Per Use），控制台里通常只有 **App**，不再要求先创建 **Project**。你截图里 Development 下已有的 App 就可以用。
+
+#### 步骤
+
+1. 打开 [console.x.com](https://console.x.com/)，用 X 账号登录并完成开发者协议
+2. 左侧进入 **Apps**（你已在该页面）
+3. 点击 **Development** 区域里已有的 App（或点 **Create App** 新建一个）
+4. 在 App 详情页找到 **App-Only Authentication → Bearer Token**
+5. 复制 Bearer Token，粘贴到 GitHub Secret `X_BEARER_TOKEN`
+
+#### 计费说明
+
+- 新版 API **没有免费套餐**，需在左侧 **Billing** 中添加支付方式并购买 credits，Bearer Token 才能正常调用接口
+- 本仓库为低用量只读场景（约 26 个账号、每 30 分钟跑一次），费用通常不高，但需自行关注 **Usage** 页面的消耗
+
+#### 验证 Token 是否可用
+
+```bash
+curl -H "Authorization: Bearer 你的TOKEN" \
+  "https://api.x.com/2/users/by/username/karpathy"
+```
+
+返回用户 JSON 即表示 Token 有效。
+
+#### X 开发者申请表填写参考
+
+首次申请或更新开发者账号时，表单会要求填写 **"Describe all of your use cases of X's data and API"**。以下为与项目实际行为一致的英文描述，可直接粘贴（表单要求英文）：
+
+**推荐版本：**
+
+```text
+I am building a personal, non-commercial AI industry reading tool called "Follow Builders." It helps me follow a curated list of public X accounts from AI researchers, founders, product leaders, and engineers, and turn their recent posts into a private daily digest for my own reading.
+
+How I use X's API:
+- Use X API v2 to look up public user profiles for about 26 curated accounts (GET /2/users/by)
+- Fetch recent public original tweets from those accounts (GET /2/users/:id/tweets)
+- Only retrieve tweets from the last 24 hours
+- Exclude retweets and replies
+- Limit to a small number of new tweets per account per run
+- Store tweet ID, text, created time, public metrics, and a link back to the original post on x.com
+
+How the data is used:
+- The fetched data is processed by an automated script running in my private GitHub repository via GitHub Actions every 30 minutes
+- The script writes a JSON feed file for personal consumption only
+- The digest includes attribution and links back to the original posts on X
+- I do not resell, sublicense, or commercially redistribute X data
+- I do not provide a public search engine, analytics product, or third-party data service
+- This is a read-only, low-volume use case for personal research and learning
+
+I will comply with the X Developer Agreement, Developer Policy, and rate limits.
+```
+
+**精简版本**（字数受限时使用）：
+
+```text
+Personal non-commercial project: a private AI industry digest tool. I use X API v2 to read recent public tweets from about 26 curated AI builder accounts, exclude retweets/replies, and generate a JSON feed in my private GitHub repo for my own reading. Data includes tweet text, timestamp, metrics, and links back to x.com. No resale or public redistribution of X data. Read-only, low-volume usage.
+```
+
+填写建议：
+
+- **Account name** 可用项目名，如 `Follow Builders Feed`
+- 若有 **Website / App URL** 字段，填你的 GitHub 仓库地址
+- 描述应具体、诚实，强调**只读、个人用途、不转售数据**
+- 新版 API 为按量付费（Pay Per Use），需在 Billing 购买 credits；本仓库会抓取约 26 个 X 账号
+
+#### 脚本实际调用的 API
+
+| 端点 | 用途 |
+|------|------|
+| `GET /2/users/by` | 批量查询公开账号的 user ID 与简介 |
+| `GET /2/users/:id/tweets` | 拉取最近 24 小时内的原创推文（排除转推和回复，每账号最多 3 条新推文） |
+
+### 获取 POD2TXT_API_KEY
+
+用于调用 `https://pod2txt.vercel.app/api/transcript`，将播客 RSS 音频转录为文本（`generate-feed.js` 的 podcasts 分支）。
+
+该服务**没有公开的自助注册页面**。通常需要：
+
+- 向项目维护者（上游 [zarazhangrui/follow-builders](https://github.com/zarazhangrui/follow-builders) 或你 fork 的来源方）申请 key，或
+- 使用你自己部署的 pod2txt 实例对应的 key
+
+若暂时没有 `POD2TXT_API_KEY`，可先手动触发 `blogs-only`、`bestblogs-only` 或 `tweets-only` 模式，跳过播客分支。
+
+### 各 mode 与 Secret 对照
+
+| 场景 | 需要的 Secret |
+|------|---------------|
+| 定时 / `all`（默认全套） | `X_BEARER_TOKEN` + `POD2TXT_API_KEY` |
+| `tweets-only` | `X_BEARER_TOKEN` |
+| `podcasts-only` | `POD2TXT_API_KEY` |
+| `blogs-only` | 无 |
+| `bestblogs-only` | 无 |
+
+缺少对应 secret 时，`generate-feed.js` 会在需要该 key 的分支上直接退出并报错（如 `X_BEARER_TOKEN not set`）。
 
 bestblogs 链路（`import-bestblogs-opml.js`、`generate-bestblogs-feed.js`）**不需要任何 API key**，仅通过 HTTP 拉取 OPML 和 RSS。
 
@@ -217,7 +334,7 @@ bestblogs 链路（`import-bestblogs-opml.js`、`generate-bestblogs-feed.js`）*
 若希望完全掌控 feed 内容或源列表：
 
 1. **Fork** `FlyAIBox/follow-builders`
-2. 在 fork 仓库配置 `X_BEARER_TOKEN`、`POD2TXT_API_KEY`
+2. 在 fork 仓库配置 [所需 Secrets](#所需-secrets)（`X_BEARER_TOKEN`、`POD2TXT_API_KEY`）
 3. **保留** `.github/workflows/generate-feed.yml`，让 Actions 定时 push 到你的 fork
 4. 本地设置环境变量，让 skill 拉取你的 fork：
 
@@ -257,6 +374,22 @@ npm run import-bestblogs && npm run generate-bestblogs-feed
 
 ## 常见问题
 
+### Q: 我没有 API key，skill 还能用吗？
+
+可以。skill 默认从上游 `FlyAIBox/follow-builders` 拉 feed，不需要你配置任何 Secret。只有自行 fork 并运行 `generate-feed.yml` 时才需要配置。
+
+### Q: X 控制台里没有 Project，只有 App？
+
+正常。2026 年新版 [X Developer Console](https://console.x.com/) 采用 **Pay Per Use** 模式，直接在 **Apps → Development** 下创建或使用 App 即可，不需要单独的 Project。点击已有 App，在 **App-Only Authentication** 区域复制 **Bearer Token**。
+
+### Q: X 开发者申请被拒怎么办？
+
+常见原因是 use case 描述过于笼统。请参考 [X 开发者申请表填写参考](#x-开发者申请表填写参考)，写清楚：只读、个人用途、约 26 个公开账号、24 小时窗口、不转售数据。若表单有 Website 字段，填写你的 GitHub 仓库地址。
+
+### Q: 暂时没有 POD2TXT_API_KEY 怎么办？
+
+可先跑 `tweets-only`、`blogs-only` 或 `bestblogs-only` 验证 workflow；播客分支需等拿到 key 后再跑 `podcasts-only` 或全套 `all`。
+
 ### Q: 我的 fork 里没有这个 workflow，skill 还能用吗？
 
 可以。skill 默认从上游 `FlyAIBox/follow-builders` 拉 feed。fork 里的 `feed-*.json` 只是快照副本，不参与生成。
@@ -285,6 +418,6 @@ feed 更新是数据 commit，不需要再跑测试或 lint。若无 `[skip ci]`
 
 ## 参见
 
-- [README.zh-CN.md](../README.zh-CN.md) — 项目总览与 skill 架构
+- [README.md](../README.md) — 项目总览与 skill 架构（中文）
 - [config/README.zh-CN.md](../config/README.zh-CN.md) — 信息源配置说明
 - `.github/workflows/generate-feed.yml` — workflow 源码（含中文注释）

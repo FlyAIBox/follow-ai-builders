@@ -135,7 +135,7 @@ ENVEOF
 展示完整的默认建造者和播客追踪列表。
 从 `config/default-sources.json` 读取并以清晰列表展示。
 
-告诉用户：「信息源由中心化团队精选维护。你会自动获得最新的建造者和播客，无需任何操作。」
+告诉用户：「信息源由中心化团队精选维护，会随仓库更新自动生效。精选层约 34 个源（X + 播客 + 博客），另有 400 个 BestBlogs 扩展源并行补充。若要建议增删来源，可在 https://github.com/FlyAIBox/follow-ai-builders/issues 提交 Issue。」
 
 ### 步骤 7：配置提醒
 
@@ -397,8 +397,35 @@ cd ${CLAUDE_SKILL_DIR}/scripts && node deliver.js --file /tmp/fb-digest.txt 2>/d
 当用户说出类似设置变更的话时，按以下方式处理：
 
 ### 信息源变更
-信息源由中心化团队管理，用户无法自行修改。
-若用户要求添加或删除来源，告诉他们：「信息源由中心化团队精选维护并自动更新。若要建议新来源，可在 https://github.com/zarazhangrui/follow-builders 提交 issue。」
+
+信息源**可以变更**，但变更方式因角色而异。本仓库地址：https://github.com/FlyAIBox/follow-ai-builders
+
+**普通用户（推荐）：**
+
+信息源采用双层结构，由中心化 feed 统一维护，**更新 skill 或拉取最新 feed 后会自动生效**，无需编辑本地文件：
+
+| 层级 | 内容 | 数量 |
+|------|------|-----:|
+| **精选层** | X 建造者、AI 播客、官方博客 | 34 |
+| **BestBlogs 扩展层** | 文章、播客、视频、X RSS | 400 |
+
+若用户想**建议新增或移除**某个建造者/播客/博客：
+1. 到 https://github.com/FlyAIBox/follow-ai-builders/issues 提交 Issue，说明账号/播客名称、理由（为何是「建造者」而非「网红」）
+2. 维护者审核后会更新 `config/default-sources.json`，下次 feed 生成即生效
+
+若用户问「我在追踪谁？」→ 读取 `config/default-sources.json` 列出精选层；BestBlogs 扩展层见 `config/bestblogs-sources.json`。
+
+**维护者 / Fork 所有者：**
+
+| 目标 | 操作 |
+|------|------|
+| 修改精选 digest 源 | 编辑 `config/default-sources.json`，运行 `cd scripts && node generate-feed.js` 重新生成 feed |
+| 刷新 BestBlogs 扩展源 | 替换 `config/bestblogs/opml/` 下 OPML，运行 `cd scripts && npm run import-bestblogs`，再运行 `node generate-bestblogs-feed.js` |
+| 查看配置说明 | 阅读 `config/README.md` 或 `config/README.zh-CN.md` |
+
+新增精选源时优先一手建设者、官方团队、Agent/GPU/基础设施实践者 — 避免纯搬运、低原创账号。每条来源可加 `focus` 字段提示信号类型。
+
+**用户无法自行修改的：** `~/.follow-builders/config.json` 不含信息源列表；普通用户不能通过对话直接增删 RSS 源，只能提 Issue 建议。
 
 ### 日程变更
 - 「改成每周/每日」→ 更新 config.json 中的 `frequency`

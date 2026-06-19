@@ -150,8 +150,11 @@ from a central feed — no API keys needed for that. You only need a key for
 Show the full list of default builders and podcasts being tracked.
 Read from `config/default-sources.json` and display as a clean list.
 
-Tell the user: "The source list is curated and updated centrally. You'll
-automatically get the latest builders and podcasts without doing anything."
+Tell the user: "The source list is curated and updated centrally — it refreshes
+automatically when the repo/feed updates. The curated tier has ~34 sources (X +
+podcasts + blogs), plus 400 BestBlogs extended sources in parallel. To suggest
+adding or removing a source, open an issue at
+https://github.com/FlyAIBox/follow-ai-builders/issues."
 
 ### Step 7: Configuration Reminder
 
@@ -427,10 +430,35 @@ Just output the digest directly.
 When the user says something that sounds like a settings change, handle it:
 
 ### Source Changes
-The source list is managed centrally and cannot be modified by users.
-If a user asks to add or remove sources, tell them: "The source list is curated
-centrally and updates automatically. If you'd like to suggest a source, you can
-open an issue at https://github.com/zarazhangrui/follow-builders."
+
+Sources **can change**, but how depends on your role. Repository: https://github.com/FlyAIBox/follow-ai-builders
+
+**End users (recommended path):**
+
+Sources use a two-tier model, maintained in the central feed. **Updates apply automatically** when you pull the latest skill or feed — no local file edits needed:
+
+| Tier | Content | Count |
+|------|---------|------:|
+| **Curated** | X builders, AI podcasts, official blogs | 34 |
+| **BestBlogs extended** | Articles, podcasts, videos, X RSS | 400 |
+
+If a user wants to **suggest adding or removing** a builder, podcast, or blog:
+1. Open an issue at https://github.com/FlyAIBox/follow-ai-builders/issues with the account/show name and why they qualify as a builder (not an influencer)
+2. Maintainers update `config/default-sources.json`; the next feed generation picks it up
+
+If the user asks "Who am I following?" → read `config/default-sources.json` for the curated tier; BestBlogs extended sources are in `config/bestblogs-sources.json`.
+
+**Maintainers / fork owners:**
+
+| Goal | Action |
+|------|--------|
+| Change curated digest sources | Edit `config/default-sources.json`, then run `cd scripts && node generate-feed.js` |
+| Refresh BestBlogs extended catalog | Replace OPML under `config/bestblogs/opml/`, run `cd scripts && npm run import-bestblogs`, then `node generate-bestblogs-feed.js` |
+| Full docs | See `config/README.md` |
+
+When adding curated sources, prefer first-hand builders, official teams, and agent/GPU/infra practitioners — avoid repost-only or low-signal accounts. Optional `focus` field hints signal type to the LLM.
+
+**What end users cannot do:** `~/.follow-builders/config.json` has no source list; users cannot add/remove RSS sources through conversation alone — they should file an issue to suggest changes.
 
 ### Schedule Changes
 - "Switch to weekly/daily" → Update `frequency` in config.json

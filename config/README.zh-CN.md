@@ -62,7 +62,7 @@ cd scripts && npm run import-bestblogs
 }
 ```
 
-扩展目录是 **参考池**，与 `default-sources.json` 精选层 **并行运行** — daily digest 在两边都有内容时会 **同时包含**。
+扩展层通过 `feed-bestblogs.json` 与精选层 **并行接入 digest** — 两边有新内容时摘要会 **同时包含** 两者（curated 深度内容 + BestBlogs 广覆盖 RSS）。
 
 | 层级 | Feed 文件 | 内容 |
 |------|-----------|------|
@@ -83,6 +83,6 @@ cd scripts && npm run import-bestblogs
 |------|------|
 | 刷新 BestBlogs OPML | 替换 `bestblogs/opml/` 下文件，运行 `npm run import-bestblogs` |
 | 修改默认 digest 源 | 编辑 `default-sources.json`（维护者） |
-| 建议新增建造者 | 提交 [GitHub Issue](https://github.com/FlyAIBox/follow-builders/issues) |
+| 建议新增建造者 | 提交 [GitHub Issue](https://github.com/FlyAIBox/follow-ai-builders/issues) |
 
 新增精选源时，优先一手建设者、官方团队、Agent/GPU/基础设施实践者 — 避免纯搬运、低原创账号。

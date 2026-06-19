@@ -1,73 +1,167 @@
-**English** | [中文](README.zh-CN.md)
+[English](README.en.md) | **中文**
 
-# Follow Builders, Not Influencers
+# 追踪建造者，而非网红
 
-An AI-powered digest that tracks the top builders in AI — researchers, founders, PMs,
-and engineers who are actually building things — and delivers curated summaries of
-what they're saying.
+Follow Builders 是一个面向 **Cursor / Claude Code / OpenClaw / Codex** 等 AI Agent 的 **Agent Skill**——不是普通 npm 包。它追踪 AI 领域真正在做事的人（研究员、创始人、PM、工程师），把他们的 X 动态、播客与官方博客整理成可读摘要，并按需或定时推送到你指定的渠道。
 
-**Philosophy:** Follow **builders** who ship products and share original opinions — not **influencers** who only repackage news.
+**理念：** 追踪那些真正在做产品、有独立见解的 **建造者（Builders）**，而非只会搬运信息的 **网红（Influencers）**。
 
-## What You Get
+## 致谢与说明
 
-A daily or weekly digest delivered to your preferred messaging app (Telegram, Discord,
-WhatsApp, etc.) with:
+本仓库是对上游项目 [**follow-builders**](https://github.com/zarazhangrui/follow-builders) 的**二次开发**（fork & extend）。
 
-- Summaries of new podcast episodes from top AI podcasts
-- Key posts and insights from 26 curated AI builders on X/Twitter
-- Full articles from official AI company blogs (Anthropic Engineering, Claude Blog)
-- An extended catalog of **400 BestBlogs RSS sources** (articles, podcasts, videos, X) for discovery and future expansion
-- Links to all original content
-- Available in English, Chinese, or bilingual
 
-## Quick Start
+| 项目 | 说明 |
+| --- | --- |
+| **代码与 Skill 架构** | 基于 [zarazhangrui/follow-builders](https://github.com/zarazhangrui/follow-builders) 的设计与实现，在本仓库中扩展了 Cursor/Codex 支持、BestBlogs 扩展源等能力 |
+| **默认信息源** | 每日摘要所用的 26 位 X 建造者、6 个播客、2 个官方博客等 curated 列表，沿用上游项目的中心化维护与 `feed-*.json` 机制 |
+| **许可证** | 延续 MIT 许可 |
 
-1. Install the skill in your agent (OpenClaw or Claude Code)
-2. Say "set up follow builders" or invoke `/follow-builders`
-3. The agent walks you through setup conversationally — no config files to edit
+感谢原作者 [Zara Zhang](https://x.com/zarazhangrui) 及上游社区贡献者。若你希望增删**默认信息源**，请向上游 [提交 Issue](https://github.com/zarazhangrui/follow-builders/issues)。
 
-The agent will ask you:
-- How often you want your digest (daily or weekly) and what time
-- What language you prefer
-- How you want it delivered (Telegram, email, or in-chat)
+---
 
-No API keys needed — all content is fetched centrally.
-Your first digest arrives immediately after setup.
+## 目录
 
-## Changing Settings
+- [你会得到什么](#你会得到什么)
+- [快速开始](#快速开始)
+- [安装](#安装)
+- [修改设置](#修改设置)
+- [自定义摘要风格](#自定义摘要风格)
+- [默认信息源](#默认信息源)
+- [扩展信息源 — BestBlogs（400）](#扩展信息源--bestblogs400)
+- [Skill 说明](#skill-说明)
+  - [核心理念](#核心理念)
+  - [整体架构](#整体架构)
+  - [SKILL.md 在指挥什么](#skillmd-在指挥什么)
+  - [仓库目录职责](#仓库目录职责)
+  - [触发方式](#触发方式)
+  - [README 与 SKILL.md 的关系](#readme-与-skillmd-的关系)
+  - [设计亮点](#设计亮点)
+- [Cursor / Codex 使用](#cursor--codex-使用)
+- [致谢与说明](#致谢与说明)
+- [隐私](#隐私)
+- [许可证](#许可证)
 
-Your delivery preferences are configurable through conversation. Just tell your agent:
+---
 
-- "Switch to weekly digests on Monday mornings"
-- "Change language to Chinese"
-- "Make the summaries shorter"
-- "Show me my current settings"
+## 你会得到什么
 
-The source list (builders and podcasts) is curated centrally and updates
-automatically — you always get the latest sources without doing anything.
+每日或每周推送到你常用的通讯工具（Telegram、Discord、WhatsApp 等），包含：
 
-## Customizing the Summaries
+- 顶级 AI 播客新节目的精华摘要
+- 26 位精选 AI 建造者在 X/Twitter 上的关键观点和洞察
+- AI 公司官方博客的完整文章（Anthropic Engineering、Claude Blog）
+- **400 个 BestBlogs RSS 扩展源**（文章、播客、视频、X）供浏览与后续扩展
+- 所有原始内容的链接
+- 支持英文、中文或双语版本
 
-The skill uses plain-English prompt files to control how content is summarized.
-You can customize them two ways:
+> **用户侧一般不需要 X / YouTube API Key。** 公开内容在 GitHub 上由 CI 每 30 分钟更新为 `feed-*.json`，你的 Agent 只需拉取 JSON 即可。
 
-**Through conversation (recommended):**
-Tell your agent what you want — "Make summaries more concise," "Focus on actionable
-insights," "Use a more casual tone." The agent updates the prompts for you.
+查看 [examples/sample-digest.md](examples/sample-digest.md) 了解输出示例。
 
-**Direct editing (power users):**
-Edit the files in the `prompts/` folder:
-- `summarize-podcast.md` — how podcast episodes are summarized
-- `summarize-tweets.md` — how X/Twitter posts are summarized
-- `summarize-blogs.md` — how blog posts are summarized
-- `digest-intro.md` — the overall digest format and tone
-- `translate.md` — how English content is translated to Chinese
+---
 
-These are plain English instructions, not code. Changes take effect on the next digest.
+## 快速开始
 
-## Default Sources
+1. 在你的 AI Agent 中安装此 Skill（OpenClaw、Claude Code 或 Cursor）
+2. 输入 `set up follow builders`，或执行 `/follow-builders`、`/ai`
+3. Agent 会以对话方式引导你完成设置——无需手动编辑配置文件
 
-### Podcasts (6)
+Agent 会询问你：
+
+- 推送频率（每日或每周）和时间
+- 语言偏好（英文 / 中文 / 双语）
+- 推送方式（Telegram、邮件，或直接在聊天中显示）
+
+不需要任何内容抓取 API key——所有内容由中心化服务统一抓取。设置完成后，第一期摘要会立即生成。
+
+---
+
+## 安装
+
+### OpenClaw
+
+```bash
+# 从 ClawhHub 安装（即将上线）
+clawhub install follow-builders
+
+# 或手动安装
+git clone https://github.com/FlyAIBox/follow-ai-builders.git ~/skills/follow-builders
+cd ~/skills/follow-builders/scripts && npm install
+```
+
+### Claude Code
+
+```bash
+git clone https://github.com/FlyAIBox/follow-ai-builders.git ~/.claude/skills/follow-builders
+cd ~/.claude/skills/follow-builders/scripts && npm install
+```
+
+### Cursor / Codex
+
+```bash
+mkdir -p ~/.codex/skills
+git clone https://github.com/FlyAIBox/follow-ai-builders.git ~/.codex/skills/follow-builders
+cd ~/.codex/skills/follow-builders/scripts && npm install
+```
+
+### 系统要求
+
+- 一个 AI Agent（OpenClaw、Claude Code、Cursor、Codex 或类似工具）
+- 网络连接（用于获取中心化 feed）
+
+仅此而已。内容抓取不需要用户侧 API key；若使用 Telegram / 邮件推送，仅需在本地配置对应的投递密钥。
+
+---
+
+## 修改设置
+
+通过对话即可修改推送偏好。直接告诉你的 Agent：
+
+- 「改成每周一早上推送」
+- 「语言换成中文」
+- 「把摘要写得更简短一些」
+- 「显示我当前的设置」
+
+信息源列表（建造者和播客）由中心化统一管理和更新——你无需做任何操作即可获得最新源。
+
+
+| 可改项           | 方式                                                                                         |
+| ------------- | ------------------------------------------------------------------------------------------ |
+| 频率、时区、语言、投递方式 | 对话修改 `~/.follow-builders/config.json`，并更新 cron                                             |
+| 摘要风格          | 对话修改 prompt，或复制到 `~/.follow-builders/prompts/` 后编辑                                         |
+| 信息源列表         | **不可**自行增删；可到 [上游 GitHub Issues](https://github.com/zarazhangrui/follow-builders/issues) 提出建议 |
+
+
+---
+
+## 自定义摘要风格
+
+Skill 使用纯文本 prompt 文件控制摘要方式。你可以：
+
+**通过对话（推荐）：** 直接告诉 Agent——「摘要写得更简练」「多关注可操作的洞察」「用更轻松的语气」。Agent 会自动更新 prompt。
+
+**直接编辑（高级用户）：** 编辑 `prompts/` 文件夹中的文件：
+
+
+| 文件                     | 作用               |
+| ---------------------- | ---------------- |
+| `summarize-podcast.md` | 播客节目摘要方式         |
+| `summarize-tweets.md`  | X/Twitter 帖子摘要方式 |
+| `summarize-blogs.md`   | 博客文章摘要方式         |
+| `digest-intro.md`      | 整体摘要格式与语气        |
+| `translate.md`         | 英文翻译为中文的方式       |
+
+
+这些都是纯文本指令，不是代码。修改后下次推送即生效。若要持久化自定义且不被中央更新覆盖，请复制到 `~/.follow-builders/prompts/` 再编辑。
+
+---
+
+## 默认信息源
+
+### 播客（6 个）
+
 - [Latent Space](https://www.youtube.com/@LatentSpacePod)
 - [Training Data](https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8)
 - [No Priors](https://www.youtube.com/@NoPriorsPodcast)
@@ -75,136 +169,233 @@ These are plain English instructions, not code. Changes take effect on the next 
 - [The MAD Podcast with Matt Turck](https://www.youtube.com/@DataDrivenNYC)
 - [AI & I by Every](https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL)
 
-### AI Builders on X (26)
+### X 上的 AI 建造者（26 位）
+
 [Andrej Karpathy](https://x.com/karpathy), [Swyx](https://x.com/swyx), [Josh Woodward](https://x.com/joshwoodward), [Boris Cherny](https://x.com/bcherny), [Thibault Sottiaux](https://x.com/thsottiaux), [Peter Yang](https://x.com/petergyang), [Nan Yu](https://x.com/thenanyu), [Madhu Guru](https://x.com/realmadhuguru), [Amanda Askell](https://x.com/AmandaAskell), [Cat Wu](https://x.com/_catwu), [Thariq](https://x.com/trq212), [Google Labs](https://x.com/GoogleLabs), [Amjad Masad](https://x.com/amasad), [Guillermo Rauch](https://x.com/rauchg), [Alex Albert](https://x.com/alexalbert__), [Aaron Levie](https://x.com/levie), [Ryo Lu](https://x.com/ryolu_), [Garry Tan](https://x.com/garrytan), [Matt Turck](https://x.com/mattturck), [Zara Zhang](https://x.com/zarazhangrui), [Nikunj Kothari](https://x.com/nikunj), [Peter Steinberger](https://x.com/steipete), [Dan Shipper](https://x.com/danshipper), [Aditya Agarwal](https://x.com/adityaag), [Sam Altman](https://x.com/sama), [Claude](https://x.com/claudeai)
 
-### Official Blogs (2)
-- [Anthropic Engineering](https://www.anthropic.com/engineering) — technical deep-dives from the Anthropic team
-- [Claude Blog](https://claude.com/blog) — product announcements and updates from Claude
+### 官方博客（2 个）
 
-> The default daily digest uses these **34 curated sources** (26 X + 6 podcasts + 2 blogs). See [`config/default-sources.json`](config/default-sources.json).
+- [Anthropic Engineering](https://www.anthropic.com/engineering) — Anthropic 团队的技术深度文章
+- [Claude Blog](https://claude.com/blog) — Claude 的产品公告与更新
 
-## Extended Sources — BestBlogs (400)
+> 每日摘要的**核心层**为以上 **34 个 curated 源**（26 X + 6 播客 + 2 博客）。列表定义见 [`config/default-sources.json`](config/default-sources.json)。该 curated 层由上游 [zarazhangrui/follow-builders](https://github.com/zarazhangrui/follow-builders) 维护；扩展层 BestBlogs 与之并行，有内容时一并纳入摘要（见下文）。
 
-In addition to the curated tier, this repo includes **400 RSS subscriptions** shared publicly by **[bestblogs.dev](https://bestblogs.dev)**, curated in the [BestBlogs](https://github.com/ginobefun/BestBlogs) project. Reference: [Gino's notes on podcasts & videos](https://www.ginonotes.com/posts/bestblogs-sources-part2-podcasts-videos).
+---
 
-**Same philosophy:** Follow **builders** who ship products and share original opinions — not **influencers** who only repackage news.
+## 扩展信息源 — BestBlogs（400）
 
-### OPML files (`config/bestblogs/opml/`)
+除 curated 层外，本仓库还收录 **[bestblogs.dev](https://bestblogs.dev)** 公开分享的 **400 个 RSS 订阅**，整理自 [BestBlogs](https://github.com/ginobefun/BestBlogs) 项目。参考：[Gino 关于播客与视频源的说明](https://www.ginonotes.com/posts/bestblogs-sources-part2-podcasts-videos)。
 
-| File | Category | Count |
-|------|----------|------:|
-| `BestBlogs_RSS_ALL.opml` | All | 400 |
-| `BestBlogs_RSS_Articles.opml` | Articles / blogs | 170 |
-| `BestBlogs_RSS_Podcasts.opml` | Podcasts | 30 |
-| `BestBlogs_RSS_Videos.opml` | Videos | 40 |
+**同样遵循理念：** 追踪真正在做产品、有独立见解的 **建造者**，而非只会搬运信息的 **网红**。
+
+### OPML 文件（`config/bestblogs/opml/`）
+
+| 文件 | 类别 | 数量 |
+| --- | --- | ---: |
+| `BestBlogs_RSS_ALL.opml` | 全部 | 400 |
+| `BestBlogs_RSS_Articles.opml` | 文章 / 博客 | 170 |
+| `BestBlogs_RSS_Podcasts.opml` | 播客 | 30 |
+| `BestBlogs_RSS_Videos.opml` | 视频 | 40 |
 | `BestBlogs_RSS_Twitters.opml` | Twitter / X | 160 |
 
-### Generated JSON
+### 生成的 JSON
 
-Run `cd scripts && npm run import-bestblogs` to regenerate [`config/bestblogs-sources.json`](config/bestblogs-sources.json) from the OPML files.
+运行 `cd scripts && npm run import-bestblogs`，可从 OPML 重新生成 [`config/bestblogs-sources.json`](config/bestblogs-sources.json)。
 
-The extended catalog is a **reference pool** for browsing Chinese/English tech blogs, podcasts, video channels, and X accounts. The **default daily digest still uses the curated tier** unless maintainers merge entries into the feed pipeline.
+扩展层已通过 `feed-bestblogs.json` 接入 digest 流水线，与 curated 层**并行运行**——两边有新内容时，摘要会**同时包含**两者。curated 侧重深度（X 官方 API、播客完整转录稿）；BestBlogs 侧重广覆盖（400 个 RSS，多为标题与 RSS 摘要，无转录稿）。也可单独浏览 OPML / JSON 作发现与扩充参考。
 
-See [`config/README.md`](config/README.md) for full source configuration docs.
+完整信息源配置说明见 [`config/README.zh-CN.md`](config/README.zh-CN.md)。
 
-## Installation
+---
 
-### OpenClaw
-```bash
-# From ClawhHub (coming soon)
-clawhub install follow-builders
+## Skill 说明
 
-# Or manually
-git clone https://github.com/FlyAIBox/follow-builders.git ~/skills/follow-builders
-cd ~/skills/follow-builders/scripts && npm install
+Follow Builders 把「跟踪 AI 行业真正在做事的人」拆成三层：
+
+1. **数据集中抓取** — GitHub Actions 每 30 分钟生成 `feed-*.json`
+2. **Agent 按提示词二次创作** — LLM 读取 JSON，按 `prompts/` 写成摘要
+3. **定时 / 按需投递** — OpenClaw cron、Telegram / 邮件，或对话内 `/ai`
+
+### 核心理念
+
+
+| 概念                  | 含义                            |
+| ------------------- | ----------------------------- |
+| **Follow Builders** | 跟踪研究者、创始人、PM、工程师等「在造东西的人」     |
+| **Not Influencers** | 不跟只会转述信息的 KOL                 |
+| **Philosophy**      | 内容来自 X、播客、官方博客；由 Agent 写成可读摘要 |
+
+
+### 整体架构
+
+```mermaid
+flowchart LR
+  subgraph central [中央仓库 · GitHub Actions]
+    GS[default-sources.json]
+    BS[bestblogs-sources.json]
+    GF[generate-feed.js]
+    GBB[generate-bestblogs-feed.js]
+    FX[feed-x.json]
+    FP[feed-podcasts.json]
+    FB[feed-blogs.json]
+    FBB[feed-bestblogs.json]
+    GS --> GF --> FX & FP & FB
+    BS --> GBB --> FBB
+  end
+
+  subgraph user [用户机器]
+    CFG[~/.follow-builders/config.json]
+    PRE[prepare-digest.js]
+    LLM[Agent 按 prompts 改写]
+    DEL[deliver.js]
+    CFG --> PRE
+    FX & FP & FB & FBB -->|HTTP 拉取| PRE
+    PRE -->|JSON| LLM --> DEL
+  end
+
+  central --> user
 ```
 
-### Claude Code
-```bash
-git clone https://github.com/FlyAIBox/follow-builders.git ~/.claude/skills/follow-builders
-cd ~/.claude/skills/follow-builders/scripts && npm install
-```
 
-## Requirements
 
-- An AI agent (OpenClaw, Claude Code, or similar)
-- Internet connection (to fetch the central feed)
+**中央侧**（[`.github/workflows/generate-feed.yml`](.github/workflows/generate-feed.yml)）：每 30 分钟运行 curated 三路（`generate-feed.js`，需 `X_BEARER_TOKEN`、`POD2TXT_API_KEY` 等）与 BestBlogs RSS 聚合（`generate-bestblogs-feed.js`，纯 HTTP），写入四个 `feed-*.json` 并 push。Secret 配置与 X 开发者申请说明见 [docs/generate-feed.zh-CN.md#所需-secrets](docs/generate-feed.zh-CN.md#所需-secrets)。
 
-That's it. No API keys needed. All content (blog articles + YouTube transcripts + X/Twitter posts)
-is fetched centrally and updated daily.
+**用户侧：**
 
-## How It Works
 
-1. A central feed is updated daily with the latest content from all sources
-   (blog articles via web scraping, podcast transcripts via pod2txt, X/Twitter via official API)
-2. Your agent fetches the feed — one HTTP request, no API keys
-3. Your agent remixes the raw content into a digestible summary using your preferences
-4. The digest is delivered to your messaging app (or shown in-chat)
+| 组件                  | 职责                                                           |
+| ------------------- | ------------------------------------------------------------ |
+| `prepare-digest.js` | 一次 HTTP 拉取四个 feed（curated 三路 + `feed-bestblogs.json`）+ 远程 prompts + 本地 `config.json`，输出一个大 JSON |
+| Agent               | 只负责按 `prompts/`* 把 JSON 原文 remix 成日报；**禁止**自己上网、编造、猜职位       |
+| `deliver.js`        | Telegram / Resend 邮件，或 stdout 直接在对话输出                        |
 
-See [examples/sample-digest.md](examples/sample-digest.md) for what the output looks like.
 
-## Architecture
+**五层分工（更细）：**
 
-Follow Builders is split into a central feed pipeline and a local skill runtime:
+1. **信息源注册表** — `config/default-sources.json` 定义播客、官方博客、X 账号及 `focus` 信号类型；`config/bestblogs-sources.json` 收录 400 个 BestBlogs RSS 源
+2. **中心 feed 生成层** — `generate-feed.js` 与 `generate-bestblogs-feed.js` 抓取、去重（`state-feed.json`）、写入四个 feed 文件
+3. **用户侧输入打包层** — `prepare-digest.js` 合并 feed、prompts、用户配置，输出 LLM 输入 JSON
+4. **LLM 混编层** — Agent 排序、分组、摘要、翻译，聚焦 AI / Agent / GPU / 推理基础设施信号
+5. **交付层** — `deliver.js` 或 OpenClaw channel 系统完成推送
 
-1. **Source registry** — `config/default-sources.json` defines the curated list (26 X, 6 podcasts, 2 blogs). `config/bestblogs-sources.json` holds 400 BestBlogs RSS sources (from [bestblogs.dev](https://bestblogs.dev)).
-2. **Central feed generation** — `scripts/generate-feed.js` runs in the maintainer
-   environment or GitHub Actions. It fetches X posts, podcast RSS/transcripts, and
-   official blog articles, deduplicates them with `state-feed.json`, then writes
-   `feed-x.json`, `feed-podcasts.json`, and `feed-blogs.json`.
-3. **User-side input packaging** — `scripts/prepare-digest.js` fetches the published
-   feed JSON files and prompt files, merges them with the user's local preferences
-   from `~/.follow-builders/config.json`, and prints one JSON payload for the LLM.
-4. **LLM remix layer** — the agent reads the payload and follows the prompt files in
-   `prompts/` to rank, group, summarize, translate, and connect the raw items into
-   a digest focused on high-signal AI, agents, infrastructure, and GPU-related news.
-5. **Delivery layer** — `scripts/deliver.js` sends the final digest to stdout,
-   Telegram, or email. OpenClaw can also deliver through its own channel system.
+> 脚本负责确定性的抓取、规范化、去重和交付；LLM 只负责编辑判断与表达。API key、定时任务、去重状态与推送逻辑均与 prompt 层隔离。
 
-The data boundary is intentional: scripts fetch and normalize content
-deterministically, while the LLM is only responsible for editorial judgment and
-writing. This keeps API keys, scheduling, deduplication, and delivery out of the
-prompting layer.
+### SKILL.md 在指挥什么
 
-## Codex Usage
+`SKILL.md` 是给 LLM 的**操作手册**（SOP），分三大块：
 
-This repository is a Codex-compatible skill. To use it in Codex, install or copy the
-folder into your Codex skills directory, then ask Codex to use the skill:
+#### 1. 平台检测与首次引导（Onboarding）
 
-```bash
-mkdir -p ~/.codex/skills
-git clone https://github.com/FlyAIBox/follow-builders.git ~/.codex/skills/follow-builders
-cd ~/.codex/skills/follow-builders/scripts && npm install
-```
+- 用 `which openclaw` 区分 **OpenClaw**（常驻、多通道）与 **Cursor / Claude Code**（非常驻）
+- 配置写入 `~/.follow-builders/config.json`：`frequency`、`timezone`、`language`、`delivery` 等
+- 非 OpenClaw 若要不关终端也能收摘要，需配 **Telegram Bot** 或 **Resend 邮件**；否则只能按需输入 `/ai`
+- OpenClaw 用 `openclaw cron add`，且必须指定 `--channel` 和 `--to`（**不能**用 `--channel last`）
+- 引导结束必须**立刻跑一遍完整 digest** 作为欢迎样本
 
-Example Codex prompts:
+#### 2. 内容交付流程（每次 `/ai` 或 cron）
+
+
+| 步骤  | 执行者                 | 动作                                                                           |
+| --- | ------------------- | ---------------------------------------------------------------------------- |
+| 1   | Agent               | 读取 `config.json`                                                             |
+| 2   | `prepare-digest.js` | 拉 feed + prompts，stdout 输出 JSON                                              |
+| 3   | Agent               | 若 `stats` 全为 0 → 告知无更新并停止                                                    |
+| 4   | Agent               | 先按 curated 层（`summarize_tweets` / `summarize_podcast` / `summarize_blogs`），再按 `summarize_bestblogs` 处理扩展层；遵循 `digest_intro`；**每条必须有 URL** |
+| 5   | Agent               | 按 `en` / `zh` / `bilingual` 输出（双语须**段落交错**，不能先英后中）                           |
+| 6   | `deliver.js` 或直接输出  | 按 `delivery.method` 发送                                                       |
+
+
+**硬性规则（防幻觉）：**
+
+- 只用 JSON 里的内容；用 `bio` 定身份，不瞎猜 title
+- 不访问 x.com、不搜索、不调 API
+- 没有 URL 的内容不得收录
+
+#### 3. 运行时改设置
+
+- **信息源** — 不可用户自行修改，仅可通过上游 Issue 建议
+- **调度** — 频率、时区、语言、投递方式 → 改 `config.json` 并更新 cron
+- **摘要风格** — 复制 prompt 到 `~/.follow-builders/prompts/` 再改，避免被中央更新覆盖
+
+### 仓库目录职责
+
+
+| 路径                            | 作用                                                                    |
+| ----------------------------- | --------------------------------------------------------------------- |
+| `SKILL.md`                    | Agent 完整 SOP（安装目录下的同名文件，如 `~/.codex/skills/follow-builders/SKILL.md`） |
+| `config/default-sources.json` | 26 个 X 账号、6 个播客、2 个博客的权威列表                                            |
+| `config/config-schema.json`   | 用户配置字段说明（实际配置在 `~/.follow-builders/config.json`）                      |
+| `prompts/*.md`                | 纯自然语言：怎么写摘要、排版、翻译                                                     |
+| `scripts/prepare-digest.js`   | 确定性数据准备，减轻 Agent 负担                                                   |
+| `scripts/deliver.js`          | Telegram / 邮件投递                                                       |
+| `scripts/generate-feed.js`    | CI 专用，需要 API 密钥；详见 [docs/generate-feed.zh-CN.md](docs/generate-feed.zh-CN.md) |
+| `.github/workflows/generate-feed.yml` | 中央 feed 定时/手动生产流水线（仅上游仓库） |
+| `feed-*.json`                 | 已处理好的公开内容快照（生成产物，勿手改）                                                 |
+| `examples/sample-digest.md`   | 期望输出样例                                                                |
+
+
+### 触发方式
+
+
+| 方式             | 示例                                                                                         |
+| -------------- | ------------------------------------------------------------------------------------------ |
+| 自然语言           | 「set up follow builders」、要 AI 行业 digest、行业洞察                                               |
+| 显式命令           | `/ai`、`/follow-builders`                                                                   |
+| 定时（OpenClaw）   | `openclaw cron add`，完整走 prepare → LLM remix → deliver                                      |
+| 定时（系统 crontab） | `prepare-digest.js | deliver.js` — **注意：不经过 LLM remix**，只投递原始 JSON；完整摘要请用 `/ai` 或 OpenClaw |
+
+
+### README 与 SKILL.md 的关系
+
+
+| 文档              | 读者    | 内容                            |
+| --------------- | ----- | ----------------------------- |
+| **README**（本文件） | 人     | 项目说明、安装、架构、隐私、源列表             |
+| **SKILL.md**    | Agent | 逐步剧本：检测平台、引导用户、跑脚本、禁止行为、改配置话术 |
+
+
+你 clone 的是 **follow-ai-builders 源码仓库**；实际使用时 Skill 常被安装到 `~/.claude/skills/follow-builders` 或 `~/.codex/skills/follow-builders`，Agent 读取的是安装目录下的 `SKILL.md`，逻辑与仓库一致。
+
+### 设计亮点
+
+- **职责分离** — 需密钥的抓取在 GitHub Actions；用户只需 fetch 公开 JSON
+- **Prompt 即配置** — 非程序员也能用对话改 `summarize-tweets.md` 等
+- **多平台适配** — OpenClaw 自动通道 vs Cursor 按需 `/ai` + 可选 Telegram
+- **防编造** — 数据与创作边界清晰；Skill 中以 ABSOLUTE RULES 约束模型
+
+---
+
+## Cursor / Codex 使用
+
+安装完成后，在 Cursor 或 Codex 中直接请求：
 
 - `/ai`
-- `Use follow-builders to prepare today's AI builders digest`
-- `Summarize the latest agent and GPU infrastructure signals from follow-builders`
-- `Update follow-builders to focus more on agents, GPUs, inference infra, and product launches`
+- `使用 follow-builders 准备今天的 AI 建造者摘要`
+- `用 follow-builders 汇总最新 Agent 和 GPU 基础设施信号`
+- `把 follow-builders 优化成更关注 Agent、GPU、推理基础设施和产品发布`
 
-For on-demand use, Codex runs `scripts/prepare-digest.js`, reads the returned JSON,
-applies the prompt files, and prints the digest in the chat. For scheduled delivery,
-configure `~/.follow-builders/config.json` and use OpenClaw cron, system cron, or an
-external scheduler to run the same prepare -> summarize -> deliver flow.
+**按需模式：** Agent 运行 `scripts/prepare-digest.js` → 读取 JSON → 结合 prompt 生成摘要 → 在对话中展示。
 
-When customizing for higher-quality AI/Agent/GPU aggregation, edit sources and
-prompts separately:
+**定时模式：** 配置 `~/.follow-builders/config.json`，再用 OpenClaw cron、系统 cron 或外部调度器串起 `prepare → summarize → deliver` 流程。
 
-- Curated tier: edit `config/default-sources.json` (maintainer)
-- BestBlogs extended catalog: update OPML under `config/bestblogs/opml/`, run `npm run import-bestblogs`
-- Adjust ranking and summarization criteria in `prompts/summarize-*.md`
-- Keep generated feed files as outputs; do not hand-edit them unless debugging
+若要提升 AI / Agent / GPU 热点聚合质量，请分开调整：
 
-## Privacy
+- **Curated 层** — `config/default-sources.json`（维护者侧）
+- **BestBlogs 扩展目录** — 更新 `config/bestblogs/opml/` 下的 OPML，运行 `npm run import-bestblogs`
+- **摘要口径** — `prompts/summarize-*.md` 或 `~/.follow-builders/prompts/`
+- **feed 文件** — 生成产物，除调试外不建议手动修改
 
-- No API keys are sent anywhere — all content is fetched centrally
-- If you use Telegram/email delivery, those keys are stored locally in `~/.follow-builders/.env`
-- The skill only reads public content (public blog posts, public YouTube videos, public X posts)
-- Your configuration, preferences, and reading history stay on your machine
+---
 
-## License
+## 隐私
+
+- 不发送任何内容抓取 API key——所有内容由中心化服务获取
+- 若使用 Telegram / 邮件推送，相关 key 仅存储在本地 `~/.follow-builders/.env`
+- Skill 只读取公开内容（公开博客、YouTube 视频、X 帖子）
+- 你的配置、偏好和阅读记录都保留在你自己的设备上
+
+---
+
+## 许可证
 
 MIT

@@ -83,4 +83,4 @@ Format: plain bullets, no headers inside the summary.
 
 ## Footer
 
-Last line: "Generated through the Follow Builders skill: https://github.com/FlyAIBox/follow-builders"
+Last line: "Generated through the Follow Builders skill: https://github.com/FlyAIBox/follow-ai-builders"
